@@ -1,0 +1,27 @@
+main () at rot13.c:8
+8	    while (wait)
+Loading section .text, size 0x8c lma 0x10110000
+Loading section .data, size 0x22 lma 0x1011008c
+Loading section .sdata, size 0x4 lma 0x101100b0
+Start address 0x10110000, load size 178
+Transfer rate: 316 bytes/sec, 59 bytes/write.
+Breakpoint 1 at 0x10110000: file rot13.c, line 8.
+[riscv.cpu] Found 4 triggers
+
+Breakpoint 1, main () at rot13.c:8
+8	    while (wait)
+
+Breakpoint 1, main () at rot13.c:8
+8	    while (wait)
+
+Breakpoint 1, main () at rot13.c:8
+8	    while (wait)
+
+Breakpoint 1, main () at rot13.c:8
+8	    while (wait)
+A debugging session is active.
+
+	Inferior 1 [Remote target] will be detached.
+
+Quit anyway? (y or n) [answered Y; input not from terminal]
+[Inferior 1 (Remote target) detached]

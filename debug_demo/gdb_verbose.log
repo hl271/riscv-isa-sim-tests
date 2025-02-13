@@ -1,0 +1,264 @@
+[remote] start_remote_1: enter
+  [remote] Sending packet: $qSupported:multiprocess+;swbreak+;hwbreak+;qRelocInsn+;fork-events+;vfork-events+;exec-events+;vContSupported+;QThreadEvents+;no-resumed+;memory-tagging+#ec
+  [remote] Received Ack
+  [remote] Packet received: PacketSize=4000;qXfer:memory-map:read-;qXfer:features:read+;qXfer:threads:read+;QStartNoAckMode+;vContSupported+
+  [remote] packet_ok: Packet qSupported (supported-packets) is supported
+  [remote] Sending packet: $vMustReplyEmpty#3a
+  [remote] Received Ack
+  [remote] Packet received: 
+  [remote] Sending packet: $QStartNoAckMode#b0
+  [remote] Received Ack
+  [remote] Packet received: OK
+  [remote] Sending packet: $Hg0#df
+  [remote] Packet received: OK
+  [remote] Sending packet: $qXfer:features:read:target.xml:0,1000#0c
+  [remote] Packet received: m<?xml version="1.0"?>\n<!DOCTYPE target SYSTEM "gdb-target.dtd">\n<target version="1.0">\n<architecture>riscv:rv32</architecture>\n<feature name="org.gnu.gdb.riscv.cpu">\n<reg name="zero" bitsize="32" regnum="0" save-restore="yes" type="int" group="general"/>\n<reg name="ra" bitsize="32" regnum="1" save-restore="yes" type="int" group="general"/>\n<reg name="sp" bitsize="32" regnum="2" save-restore="yes" type="int" group="general"/>\n<reg name="gp" bitsize="32" regnum="3" save-restore="yes" type="int" group="genera [3585 bytes omitted]
+  [remote] Sending packet: $qXfer:features:read:target.xml:1000,1000#9d
+  [remote] Packet received: m"stvec" bitsize="32" regnum="326" save-restore="no" type="int" group="csr"/>\n<reg name="scounteren" bitsize="32" regnum="327" save-restore="no" type="int" group="csr"/>\n<reg name="stvt" bitsize="32" regnum="328" save-restore="no" type="int" group="csr"/>\n<reg name="senvcfg" bitsize="32" regnum="331" save-restore="no" type="int" group="csr"/>\n<reg name="sstateen0" bitsize="32" regnum="333" save-restore="no" type="int" group="csr"/>\n<reg name="sstateen1" bitsize="32" regnum="334" save-restore="no" type="int" [3585 bytes omitted]
+  [remote] Sending packet: $qXfer:features:read:target.xml:2000,1000#9e
+  [remote] Packet received: me="mstateen0h" bitsize="32" regnum="861" save-restore="no" type="int" group="csr"/>\n<reg name="mstateen1h" bitsize="32" regnum="862" save-restore="no" type="int" group="csr"/>\n<reg name="mstateen2h" bitsize="32" regnum="863" save-restore="no" type="int" group="csr"/>\n<reg name="mstateen3h" bitsize="32" regnum="864" save-restore="no" type="int" group="csr"/>\n<reg name="mcountinhibit" bitsize="32" regnum="865" save-restore="no" type="int" group="csr"/>\n<reg name="mhpmevent3" bitsize="32" regnum="868" save-re [3585 bytes omitted]
+  [remote] Sending packet: $qXfer:features:read:target.xml:3000,1000#9f
+  [remote] Packet received: m" type="int" group="csr"/>\n<reg name="pmpcfg0" bitsize="32" regnum="993" save-restore="no" type="int" group="csr"/>\n<reg name="pmpcfg1" bitsize="32" regnum="994" save-restore="no" type="int" group="csr"/>\n<reg name="pmpcfg2" bitsize="32" regnum="995" save-restore="no" type="int" group="csr"/>\n<reg name="pmpcfg3" bitsize="32" regnum="996" save-restore="no" type="int" group="csr"/>\n<reg name="pmpcfg4" bitsize="32" regnum="997" save-restore="no" type="int" group="csr"/>\n<reg name="pmpcfg5" bitsize="32" regnum [3585 bytes omitted]
+  [remote] Sending packet: $qXfer:features:read:target.xml:4000,1000#a0
+  [remote] Packet received: mo" type="int" group="csr"/>\n<reg name="pmpaddr29" bitsize="32" regnum="1038" save-restore="no" type="int" group="csr"/>\n<reg name="pmpaddr30" bitsize="32" regnum="1039" save-restore="no" type="int" group="csr"/>\n<reg name="pmpaddr31" bitsize="32" regnum="1040" save-restore="no" type="int" group="csr"/>\n<reg name="pmpaddr32" bitsize="32" regnum="1041" save-restore="no" type="int" group="csr"/>\n<reg name="pmpaddr33" bitsize="32" regnum="1042" save-restore="no" type="int" group="csr"/>\n<reg name="pmpaddr34" b [3585 bytes omitted]
+  [remote] Sending packet: $qXfer:features:read:target.xml:5000,1000#a1
+  [remote] Packet received: mgnum="1613" save-restore="no" type="int" group="csr"/>\n<reg name="hstateen1" bitsize="32" regnum="1614" save-restore="no" type="int" group="csr"/>\n<reg name="hstateen2" bitsize="32" regnum="1615" save-restore="no" type="int" group="csr"/>\n<reg name="hstateen3" bitsize="32" regnum="1616" save-restore="no" type="int" group="csr"/>\n<reg name="htimedeltah" bitsize="32" regnum="1622" save-restore="no" type="int" group="csr"/>\n<reg name="henvcfgh" bitsize="32" regnum="1627" save-restore="no" type="int" group="cs [3585 bytes omitted]
+  [remote] Sending packet: $qXfer:features:read:target.xml:6000,1000#a2
+  [remote] Packet received: mitsize="32" regnum="1920" save-restore="no" type="int" group="csr"/>\n<reg name="mseccfg" bitsize="32" regnum="1928" save-restore="no" type="int" group="csr"/>\n<reg name="mseccfgh" bitsize="32" regnum="1944" save-restore="no" type="int" group="csr"/>\n<reg name="tselect" bitsize="32" regnum="2017" save-restore="no" type="int" group="csr"/>\n<reg name="tdata1" bitsize="32" regnum="2018" save-restore="no" type="int" group="csr"/>\n<reg name="tdata2" bitsize="32" regnum="2019" save-restore="no" type="int" group=" [3585 bytes omitted]
+  [remote] Sending packet: $qXfer:features:read:target.xml:7000,1000#a3
+  [remote] Packet received: mname="mhpmcounter30" bitsize="32" regnum="2911" save-restore="no" type="int" group="csr"/>\n<reg name="mhpmcounter31" bitsize="32" regnum="2912" save-restore="no" type="int" group="csr"/>\n<reg name="mcycleh" bitsize="32" regnum="3009" save-restore="no" type="int" group="csr"/>\n<reg name="minstreth" bitsize="32" regnum="3011" save-restore="no" type="int" group="csr"/>\n<reg name="mhpmcounter3h" bitsize="32" regnum="3012" save-restore="no" type="int" group="csr"/>\n<reg name="mhpmcounter4h" bitsize="32" regnum= [3585 bytes omitted]
+  [remote] Sending packet: $qXfer:features:read:target.xml:8000,1000#a4
+  [remote] Packet received: m>\n<reg name="hpmcounter10" bitsize="32" regnum="3147" save-restore="no" type="int" group="csr"/>\n<reg name="hpmcounter11" bitsize="32" regnum="3148" save-restore="no" type="int" group="csr"/>\n<reg name="hpmcounter12" bitsize="32" regnum="3149" save-restore="no" type="int" group="csr"/>\n<reg name="hpmcounter13" bitsize="32" regnum="3150" save-restore="no" type="int" group="csr"/>\n<reg name="hpmcounter14" bitsize="32" regnum="3151" save-restore="no" type="int" group="csr"/>\n<reg name="hpmcounter15" bitsize=" [3585 bytes omitted]
+  [remote] Sending packet: $qXfer:features:read:target.xml:9000,1000#a5
+  [remote] Packet received: lounter21h" bitsize="32" regnum="3286" save-restore="no" type="int" group="csr"/>\n<reg name="hpmcounter22h" bitsize="32" regnum="3287" save-restore="no" type="int" group="csr"/>\n<reg name="hpmcounter23h" bitsize="32" regnum="3288" save-restore="no" type="int" group="csr"/>\n<reg name="hpmcounter24h" bitsize="32" regnum="3289" save-restore="no" type="int" group="csr"/>\n<reg name="hpmcounter25h" bitsize="32" regnum="3290" save-restore="no" type="int" group="csr"/>\n<reg name="hpmcounter26h" bitsize="32" regnum= [1329 bytes omitted]
+  [remote] Sending packet: $qTStatus#49
+  [remote] Packet received: 
+  [remote] packet_ok: Packet qTStatus (trace-status) is NOT supported
+  [remote] Sending packet: $?#3f
+  [remote] Packet received: S02
+  [remote] Sending packet: $qXfer:threads:read::0,1000#92
+  [remote] Packet received: l<?xml version="1.0"?>\n<threads>\n</threads>\n
+  [remote] Sending packet: $Hc-1#09
+  [remote] Packet received: OK
+  [remote] Sending packet: $qC#b4
+  [remote] Packet received: QC0
+  [remote] Sending packet: $qAttached#8f
+  [remote] Packet received: 1
+  [remote] packet_ok: Packet qAttached (query-attached) is supported
+  [remote] Sending packet: $qOffsets#4b
+  [remote] Packet received: Text=0;Data=0;Bss=0
+  [remote] wait: enter
+    [remote] select_thread_for_ambiguous_stop_reply: enter
+      [remote] select_thread_for_ambiguous_stop_reply: process_wide_stop = 0
+      [remote] select_thread_for_ambiguous_stop_reply: first resumed thread is Remote target
+      [remote] select_thread_for_ambiguous_stop_reply: is this guess ambiguous? = 0
+    [remote] select_thread_for_ambiguous_stop_reply: exit
+  [remote] wait: exit
+  [remote] Sending packet: $g#67
+  [remote] Packet received: 000000000000000000000000000000000000000000001110000000000000000000000000000000000000000020100000000000000000000001000000000011100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004001110
+  [remote] Sending packet: $qXfer:threads:read::0,1000#92
+  [remote] Packet received: l<?xml version="1.0"?>\n<threads>\n</threads>\n
+0x10110004 in main () at rot13.c:8
+8	    while (wait)
+  [remote] Sending packet: $qSymbol::#5b
+  [remote] Packet received: OK
+  [remote] packet_ok: Packet qSymbol (symbol-lookup) is supported
+[remote] start_remote_1: exit
+Loading section .text, size 0x8c lma 0x10110000
+[remote] Sending packet: $X10110000,0:#71
+[remote] Packet received: OK
+[remote] check_binary_download: binary downloading supported by target
+[remote] Sending packet: $X10110000,8c:·\a\021\020\003§\a\013ã\034\aþo\000À\002\223\206&ù\223öö\017\023\006À\000clÖ\000·\006\021\020\223\206Æ\b³\206æ\000\223\2077ÿ}\003\200ö\000\023\a\027\000·\a\021\020\223\207Ç\b³\207ç\000\203Ç\a\000c\210\a\002\223æ\a\002\023\206öù\023vö\017\223\005À\000ãêÅú·\006\021\020\223\206Æ\b³\206æ\000\223\207×\000}\003\200ö\000oð\037ü·\a\021\020\203§\a\013ã\214\aþ\023\005\000\000g\200\000\000#c8
+[remote] Packet received: OK
+Loading section .data, size 0x22 lma 0x1011008c
+[remote] Sending packet: $X1011008c,22:Vafgehpgvba frgf jnag gb or serr!\000#ad
+[remote] Packet received: OK
+Loading section .sdata, size 0x4 lma 0x101100b0
+[remote] Sending packet: $X101100b0,4:\001\000\000\000#a8
+[remote] Packet received: OK
+Start address 0x10110000, load size 178
+[remote] Sending packet: $P20=00001110#72
+[remote] Packet received: OK
+[remote] packet_ok: Packet P (set-register) is supported
+Transfer rate: 13 KB/sec, 59 bytes/write.
+[remote] Sending packet: $m10110000,40#80
+[remote] Packet received: b707111003a7070be31c07fe6f00c002938626f993f6f60f1306c000636cd600b70611109386c608b386e600938737ff2380f60013071700b70711109387c708
+[remote] Sending packet: $m10110000,4#50
+[remote] Packet received: b7071110
+Breakpoint 1 at 0x10110000: file rot13.c, line 8.
+[remote] Sending packet: $Z0,10110000,4#99
+[remote] Packet received: OK
+[remote] packet_ok: Packet Z0 (software-breakpoint) is supported
+[remote] Sending packet: $vCont?#49
+[remote] Packet received: vCont;c;C;s;S
+[remote] packet_ok: Packet vCont (verbose-resume) is supported
+[remote] Sending packet: $vCont;c#a8
+[remote] wait: enter
+[remote] wait: exit
+[remote] wait: enter
+  [remote] Packet received: T05
+  [remote] select_thread_for_ambiguous_stop_reply: enter
+    [remote] select_thread_for_ambiguous_stop_reply: process_wide_stop = 0
+    [remote] select_thread_for_ambiguous_stop_reply: first resumed thread is Remote target
+    [remote] select_thread_for_ambiguous_stop_reply: is this guess ambiguous? = 0
+  [remote] select_thread_for_ambiguous_stop_reply: exit
+[remote] wait: exit
+[remote] Sending packet: $g#67
+[remote] Packet received: 000000000000000000000000000000000000000000001110000000000000000000000000000000000000000020100000000000000000000001000000000011100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001110
+[remote] Sending packet: $qXfer:threads:read::0,1000#92
+[remote] Packet received: l<?xml version="1.0"?>\n<threads>\n</threads>\n
+[remote] Sending packet: $z0,10110000,4#b9
+[remote] Packet received: OK
+
+Breakpoint 1, main () at rot13.c:8
+8	    while (wait)
+[remote] Sending packet: $vCont;s:0;c:0#2a
+[remote] wait: enter
+[remote] wait: exit
+[remote] wait: enter
+  [remote] Packet received: O5b72697363762e6370755d20466f756e6420342074726967676572730a
+[riscv.cpu] Found 4 triggers
+[remote] wait: exit
+[remote] wait: enter
+  [remote] Packet received: T05
+  [remote] select_thread_for_ambiguous_stop_reply: enter
+    [remote] select_thread_for_ambiguous_stop_reply: process_wide_stop = 0
+    [remote] select_thread_for_ambiguous_stop_reply: first resumed thread is Remote target
+    [remote] select_thread_for_ambiguous_stop_reply: is this guess ambiguous? = 0
+  [remote] select_thread_for_ambiguous_stop_reply: exit
+[remote] wait: exit
+[remote] Sending packet: $g#67
+[remote] Packet received: 000000000000000000000000000000000000000000001110000000000000000000000000000000000000000020100000000000000000000001000000000011100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004001110
+[remote] Sending packet: $m10110000,40#80
+[remote] Packet received: b707111003a7070be31c07fe6f00c002938626f993f6f60f1306c000636cd600b70611109386c608b386e600938737ff2380f60013071700b70711109387c708
+[remote] Sending packet: $Z0,10110000,4#99
+[remote] Packet received: OK
+[remote] Sending packet: $vCont;s:0;c#c0
+[remote] wait: enter
+  [remote] Packet received: T05
+  [remote] select_thread_for_ambiguous_stop_reply: enter
+    [remote] select_thread_for_ambiguous_stop_reply: process_wide_stop = 0
+    [remote] select_thread_for_ambiguous_stop_reply: first resumed thread is Remote target
+    [remote] select_thread_for_ambiguous_stop_reply: is this guess ambiguous? = 0
+  [remote] select_thread_for_ambiguous_stop_reply: exit
+[remote] wait: exit
+[remote] Sending packet: $g#67
+[remote] Packet received: 000000000000000000000000000000000000000000001110000000000000000000000000000000000000000020100000000000000000000001000000000011100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008001110
+[remote] Sending packet: $vCont;s:0;c#c0
+[remote] wait: enter
+  [remote] Packet received: T05
+  [remote] select_thread_for_ambiguous_stop_reply: enter
+    [remote] select_thread_for_ambiguous_stop_reply: process_wide_stop = 0
+    [remote] select_thread_for_ambiguous_stop_reply: first resumed thread is Remote target
+    [remote] select_thread_for_ambiguous_stop_reply: is this guess ambiguous? = 0
+  [remote] select_thread_for_ambiguous_stop_reply: exit
+[remote] wait: exit
+[remote] Sending packet: $g#67
+[remote] Packet received: 000000000000000000000000000000000000000000001110000000000000000000000000000000000000000020100000000000000000000001000000000011100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001110
+[remote] Sending packet: $qXfer:threads:read::0,1000#92
+[remote] Packet received: l<?xml version="1.0"?>\n<threads>\n</threads>\n
+[remote] Sending packet: $z0,10110000,4#b9
+[remote] Packet received: OK
+
+Breakpoint 1, main () at rot13.c:8
+8	    while (wait)
+[remote] Sending packet: $vCont;s:0;c:0#2a
+[remote] wait: enter
+[remote] wait: exit
+[remote] wait: enter
+  [remote] Packet received: T05
+  [remote] select_thread_for_ambiguous_stop_reply: enter
+    [remote] select_thread_for_ambiguous_stop_reply: process_wide_stop = 0
+    [remote] select_thread_for_ambiguous_stop_reply: first resumed thread is Remote target
+    [remote] select_thread_for_ambiguous_stop_reply: is this guess ambiguous? = 0
+  [remote] select_thread_for_ambiguous_stop_reply: exit
+[remote] wait: exit
+[remote] Sending packet: $g#67
+[remote] Packet received: 000000000000000000000000000000000000000000001110000000000000000000000000000000000000000020100000000000000000000001000000000011100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004001110
+[remote] Sending packet: $m10110000,40#80
+[remote] Packet received: b707111003a7070be31c07fe6f00c002938626f993f6f60f1306c000636cd600b70611109386c608b386e600938737ff2380f60013071700b70711109387c708
+[remote] Sending packet: $Z0,10110000,4#99
+[remote] Packet received: OK
+[remote] Sending packet: $vCont;s:0;c#c0
+[remote] wait: enter
+  [remote] Packet received: T05
+  [remote] select_thread_for_ambiguous_stop_reply: enter
+    [remote] select_thread_for_ambiguous_stop_reply: process_wide_stop = 0
+    [remote] select_thread_for_ambiguous_stop_reply: first resumed thread is Remote target
+    [remote] select_thread_for_ambiguous_stop_reply: is this guess ambiguous? = 0
+  [remote] select_thread_for_ambiguous_stop_reply: exit
+[remote] wait: exit
+[remote] Sending packet: $g#67
+[remote] Packet received: 000000000000000000000000000000000000000000001110000000000000000000000000000000000000000020100000000000000000000001000000000011100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008001110
+[remote] Sending packet: $vCont;s:0;c#c0
+[remote] wait: enter
+  [remote] Packet received: T05
+  [remote] select_thread_for_ambiguous_stop_reply: enter
+    [remote] select_thread_for_ambiguous_stop_reply: process_wide_stop = 0
+    [remote] select_thread_for_ambiguous_stop_reply: first resumed thread is Remote target
+    [remote] select_thread_for_ambiguous_stop_reply: is this guess ambiguous? = 0
+  [remote] select_thread_for_ambiguous_stop_reply: exit
+[remote] wait: exit
+[remote] Sending packet: $g#67
+[remote] Packet received: 000000000000000000000000000000000000000000001110000000000000000000000000000000000000000020100000000000000000000001000000000011100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001110
+[remote] Sending packet: $qXfer:threads:read::0,1000#92
+[remote] Packet received: l<?xml version="1.0"?>\n<threads>\n</threads>\n
+[remote] Sending packet: $z0,10110000,4#b9
+[remote] Packet received: OK
+
+Breakpoint 1, main () at rot13.c:8
+8	    while (wait)
+[remote] Sending packet: $vCont;s:0;c:0#2a
+[remote] wait: enter
+[remote] wait: exit
+[remote] wait: enter
+  [remote] Packet received: T05
+  [remote] select_thread_for_ambiguous_stop_reply: enter
+    [remote] select_thread_for_ambiguous_stop_reply: process_wide_stop = 0
+    [remote] select_thread_for_ambiguous_stop_reply: first resumed thread is Remote target
+    [remote] select_thread_for_ambiguous_stop_reply: is this guess ambiguous? = 0
+  [remote] select_thread_for_ambiguous_stop_reply: exit
+[remote] wait: exit
+[remote] Sending packet: $g#67
+[remote] Packet received: 000000000000000000000000000000000000000000001110000000000000000000000000000000000000000020100000000000000000000001000000000011100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004001110
+[remote] Sending packet: $m10110000,40#80
+[remote] Packet received: b707111003a7070be31c07fe6f00c002938626f993f6f60f1306c000636cd600b70611109386c608b386e600938737ff2380f60013071700b70711109387c708
+[remote] Sending packet: $Z0,10110000,4#99
+[remote] Packet received: OK
+[remote] Sending packet: $vCont;s:0;c#c0
+[remote] wait: enter
+  [remote] Packet received: T05
+  [remote] select_thread_for_ambiguous_stop_reply: enter
+    [remote] select_thread_for_ambiguous_stop_reply: process_wide_stop = 0
+    [remote] select_thread_for_ambiguous_stop_reply: first resumed thread is Remote target
+    [remote] select_thread_for_ambiguous_stop_reply: is this guess ambiguous? = 0
+  [remote] select_thread_for_ambiguous_stop_reply: exit
+[remote] wait: exit
+[remote] Sending packet: $g#67
+[remote] Packet received: 000000000000000000000000000000000000000000001110000000000000000000000000000000000000000020100000000000000000000001000000000011100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008001110
+[remote] Sending packet: $vCont;s:0;c#c0
+[remote] wait: enter
+  [remote] Packet received: T05
+  [remote] select_thread_for_ambiguous_stop_reply: enter
+    [remote] select_thread_for_ambiguous_stop_reply: process_wide_stop = 0
+    [remote] select_thread_for_ambiguous_stop_reply: first resumed thread is Remote target
+    [remote] select_thread_for_ambiguous_stop_reply: is this guess ambiguous? = 0
+  [remote] select_thread_for_ambiguous_stop_reply: exit
+[remote] wait: exit
+[remote] Sending packet: $g#67
+[remote] Packet received: 000000000000000000000000000000000000000000001110000000000000000000000000000000000000000020100000000000000000000001000000000011100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001110
+[remote] Sending packet: $qXfer:threads:read::0,1000#92
+[remote] Packet received: l<?xml version="1.0"?>\n<threads>\n</threads>\n
+[remote] Sending packet: $z0,10110000,4#b9
+[remote] Packet received: OK
+
+Breakpoint 1, main () at rot13.c:8
+8	    while (wait)
+A debugging session is active.
+
+	Inferior 1 [Remote target] will be detached.
+
+Quit anyway? (y or n) [answered Y; input not from terminal]
+[remote] Sending packet: $D#44
+[remote] Packet received: OK
+[Inferior 1 (Remote target) detached]
