@@ -8,8 +8,8 @@ set logging overwrite on
 set logging enabled on
 
 # set gdb to show packets and serial data
-set debug remote 1
-#set debug serial 1
+#set debug remote 1
+set debug serial 1
 
 target remote localhost:3333
 #monitor r

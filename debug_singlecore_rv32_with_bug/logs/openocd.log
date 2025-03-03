@@ -1,0 +1,37 @@
+Info : auto-selecting first available session transport "jtag". To override use 'transport select <transport>'.
+DEPRECATED! use 'gdb report_data_abort', not 'gdb_report_data_abort'
+DEPRECATED! use 'gdb report_register_access_error', not 'gdb_report_register_access_error'
+Info : Initializing remote_bitbang driver
+Info : Connecting to localhost:9000
+Info : remote_bitbang driver initialized
+Info : Note: The adapter "remote_bitbang" doesn't support configurable speed
+Info : JTAG tap: riscv.cpu tap/device found: 0xdeadbeef (mfg: 0x777 (Fabric of Truth Inc), part: 0xeadb, ver: 0xd)
+Warn : JTAG tap: riscv.cpu       UNEXPECTED: 0xdeadbeef (mfg: 0x777 (Fabric of Truth Inc), part: 0xeadb, ver: 0xd)
+Error: JTAG tap: riscv.cpu  expected 1 of 1: 0x10e31913 (mfg: 0x489 (SiFive Inc), part: 0x0e31, ver: 0x1)
+Error: Trying to use configured scan chain anyway...
+Warn : Bypassing JTAG setup events due to errors
+Warn : [riscv.cpu] The target's debug bus (DMI) address width is lower than the minimum:
+Warn : [riscv.cpu]  found dtmcs.abits = 6; minimum is abits = 7.
+Error: Debugger is not authenticated to target Debug Module. (dmstatus=0x4c0c02). Use `riscv authdata_read` and `riscv authdata_write` commands to authenticate.
+Error: [riscv.cpu] Examination failed
+Warn : target riscv.cpu examination failed
+Info : [riscv.cpu] starting gdb server on 3333
+Info : Listening on port 3333 for gdb connections
+Info : [riscv.cpu] authdata_write resulted in successful authentication
+Warn : [riscv.cpu] The target's debug bus (DMI) address width is lower than the minimum:
+Warn : [riscv.cpu]  found dtmcs.abits = 6; minimum is abits = 7.
+Info : [riscv.cpu] datacount=2 progbufsize=2
+Info : [riscv.cpu] Vector support with vlenb=16
+Info : [riscv.cpu] Examined RISC-V core
+Info : [riscv.cpu]  XLEN=32, misa=0x4034112d
+[riscv.cpu] Target successfully examined.
+Info : [riscv.cpu] Examination succeed
+riscv.cpu halted due to debug-request.
+Info : Listening on port 6666 for tcl connections
+Info : Listening on port 4444 for telnet connections
+Info : accepting 'gdb' connection on tcp/3333
+riscv.cpu halted due to debug-request.
+Info : [riscv.cpu] Found 4 triggers
+Info : dropped 'gdb' connection
+shutdown command invoked
+Info : remote_bitbang interface quit

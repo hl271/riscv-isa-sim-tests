@@ -1,0 +1,1 @@
+spike -p1 --isa RV32IMAFDCV --dm-auth --dmi-rti 4 --dm-no-abstract-fpr --dm-no-halt-groups --varch=vlen:128,elen:64 -m0x10100000:0x10000000 --rbb-port 9000 spike32_main

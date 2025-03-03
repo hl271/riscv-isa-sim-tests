@@ -1,0 +1,14 @@
+Loading section .text, size 0x106 lma 0x10110000
+[remote] Sending packet: $X10110000,0:#71
+[remote] Packet received: OK
+[remote] check_binary_download: binary downloading supported by target
+[remote] Sending packet: $X10110000,106:\021�\001�sP\0000s}\003\0200\205C�\003�ss\000c\031p\000\205C�\003�ss\000c\023p\000)�sP00sP 0sP@0\227\021\000\000\223\201��\027\001\000\000\023\001a\r\023\003\200\026�"@�\205\002\032\221�\022�\236\002�\227\002\000\000\223\202\202"\027\003\000\000\023\003\003"c�b\000}\003\200\002\000\205\002ݿo\000�\003\001�\001\000ac\023\003\003j}]\023�\037\003�s\000P0��\000\000\001\021"�\000\020}\003&��}\003}\004��\003'��\203'\204��\227>\205rD\005a\202\200yq\006�"�\000\030\227\a\000\000\223\207\207�}\003"��}\003&\004�9�\203'��\212\a�\027�\227\003'��}\003���\203'��\205\a}\003&��\003'��\211G����\203'D��E)E\202\227}\003}\004��\201G>\205�P"TEa\202\200#69
+[remote] Packet received: OK
+Loading section .data, size 0x16c lma 0x10110110
+[remote] Sending packet: $X10110110,16c:\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\210fD"\000\000\000\000#95
+[remote] Packet received: OK
+Start address 0x10110000, load size 626
+[remote] Sending packet: $P20=00001110#72
+[remote] Packet received: OK
+[remote] packet_ok: Packet P (set-register) is supported
+Transfer rate: 122 KB/sec, 313 bytes/write.

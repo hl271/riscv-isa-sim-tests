@@ -1,0 +1,5 @@
+[remote] Sending packet: $m10110080,40#88
+[remote] Packet received: e31f03fe73005030f5b70000011122ce00102326a4fe2324b4fe0327c4fe832784feba973e85724405618280797106d622d4001897070000938787fd2322f4fe
+[remote] Sending packet: $m101100b4,4#86
+[remote] Packet received: 97070000
+Breakpoint 1 at 0x101100b4: file program/main.c, line 16.

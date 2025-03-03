@@ -1,0 +1,26 @@
+[remote] Sending packet: $Z0,101100b4,4#cf
+[remote] Packet received: OK
+[remote] packet_ok: Packet Z0 (software-breakpoint) is supported
+[remote] Sending packet: $vCont?#49
+[remote] Packet received: vCont;c;C;s;S
+[remote] packet_ok: Packet vCont (verbose-resume) is supported
+[remote] Sending packet: $vCont;c#a8
+[remote] wait: enter
+[remote] wait: exit
+[remote] wait: enter
+  [remote] Packet received: T05
+  [remote] select_thread_for_ambiguous_stop_reply: enter
+    [remote] select_thread_for_ambiguous_stop_reply: process_wide_stop = 0
+    [remote] select_thread_for_ambiguous_stop_reply: first resumed thread is Remote target
+    [remote] select_thread_for_ambiguous_stop_reply: is this guess ambiguous? = 0
+  [remote] select_thread_for_ambiguous_stop_reply: exit
+[remote] wait: exit
+[remote] Sending packet: $g#67
+[remote] Packet received: 00000000f6001110480211107c0a1110000000007c0211107c0211100000100078021110000000000a000000140000000000000000000000030000000200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000b4001110
+[remote] Sending packet: $qXfer:threads:read::0,1000#92
+[remote] Packet received: l<?xml version="1.0"?>\n<threads>\n</threads>\n
+[remote] Sending packet: $z0,101100b4,4#ef
+[remote] Packet received: OK
+
+Breakpoint 1, main () at program/main.c:16
+16	    bug.func = safe_function;

@@ -1,0 +1,8 @@
+A debugging session is active.
+
+	Inferior 1 [Remote target] will be detached.
+
+Quit anyway? (y or n) [answered Y; input not from terminal]
+[remote] Sending packet: $D#44
+[remote] Packet received: OK
+[Inferior 1 (Remote target) detached]
