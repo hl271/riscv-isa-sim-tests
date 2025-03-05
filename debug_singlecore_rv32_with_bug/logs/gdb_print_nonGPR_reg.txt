@@ -1,0 +1,4 @@
+(gdb) p $dcsr
+[remote] Sending packet: $p7f1#3e
+[remote] Packet received: 43b00340
+$3 = 1073983555

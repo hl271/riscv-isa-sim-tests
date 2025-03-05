@@ -1,0 +1,599 @@
+Debug: 858 2860 gdb_server.c:424 gdb_log_incoming_packet(): [riscv.cpu] {1} received packet: g
+Debug: 859 2860 riscv.c:3514 riscv_get_gdb_reg_list_internal(): [riscv.cpu] reg_class=1, read=1
+Debug: 860 2860 riscv_reg.c:990 riscv_reg_get(): [riscv.cpu] Reading zero from target
+Debug: 861 2860 riscv-013.c:5083 riscv013_get_register(): [riscv.cpu] reading register zero
+Debug: 862 2860 riscv-013.c:1567 register_read_direct(): [riscv.cpu] Reading zero
+Debug: 863 2860 riscv-013.c:664 riscv013_execute_abstract_command(): [riscv.cpu] access register=0x221000 {regno=0x1000 write=arg0 transfer=enabled postexec=disabled aarpostincrement=disabled aarsize=32bit}
+Debug: 864 2860 batch.c:291 riscv_batch_run_from(): [riscv.cpu] Running batch of scans [0, 3)
+Debug: 865 2860 batch.c:255 log_batch(): 40b w 00221000 @17 -> + 00000000 @00; 1i
+Debug: 866 2860 batch.c:199 log_dmi_decoded(): write: command=0x221000 {control=0x221000}
+Debug: 867 2860 batch.c:255 log_batch(): 40b r 00000000 @16 -> + 00221000 @17; 1i
+Debug: 868 2860 batch.c:255 log_batch(): 40b - 00000000 @00 -> + 02000002 @16; 1i
+Debug: 869 2860 batch.c:199 log_dmi_decoded(): read: abstractcs=0x2000002 {datacount=2 progbufsize=2}
+Debug: 870 2860 riscv-013.c:623 abstract_cmd_batch_check_and_clear_cmderr(): [riscv.cpu] abstractcs=0x2000002 {datacount=2 relaxedpriv=full_checks busy=ready progbufsize=2 cmderr=none}
+Debug: 871 2860 batch.c:291 riscv_batch_run_from(): [riscv.cpu] Running batch of scans [0, 2)
+Debug: 872 2861 batch.c:255 log_batch(): 40b r 00000000 @04 -> + 00000000 @00; 1i
+Debug: 873 2861 batch.c:255 log_batch(): 40b - 00000000 @00 -> + 00000000 @04; 1i
+Debug: 874 2861 batch.c:199 log_dmi_decoded(): read: 
+Debug: 875 2861 riscv-013.c:1586 register_read_direct(): [riscv.cpu] zero = 0x0
+Debug: 876 2861 riscv_reg.c:999 riscv_reg_get(): [riscv.cpu] Read zero: 0x0
+Debug: 877 2861 riscv-013_reg.c:40 riscv013_reg_get(): [riscv.cpu] Read 0x00000000 from zero (valid=1).
+Debug: 878 2861 riscv_reg.c:990 riscv_reg_get(): [riscv.cpu] Reading ra from target
+Debug: 879 2861 riscv-013.c:5083 riscv013_get_register(): [riscv.cpu] reading register ra
+Debug: 880 2861 riscv-013.c:1567 register_read_direct(): [riscv.cpu] Reading ra
+Debug: 881 2861 riscv-013.c:664 riscv013_execute_abstract_command(): [riscv.cpu] access register=0x221001 {regno=0x1001 write=arg0 transfer=enabled postexec=disabled aarpostincrement=disabled aarsize=32bit}
+Debug: 882 2861 batch.c:291 riscv_batch_run_from(): [riscv.cpu] Running batch of scans [0, 3)
+Debug: 883 2861 batch.c:255 log_batch(): 40b w 00221001 @17 -> + 00000000 @00; 1i
+Debug: 884 2861 batch.c:199 log_dmi_decoded(): write: command=0x221001 {control=0x221001}
+Debug: 885 2861 batch.c:255 log_batch(): 40b r 00000000 @16 -> + 00221001 @17; 1i
+Debug: 886 2861 batch.c:255 log_batch(): 40b - 00000000 @00 -> + 02000002 @16; 1i
+Debug: 887 2861 batch.c:199 log_dmi_decoded(): read: abstractcs=0x2000002 {datacount=2 progbufsize=2}
+Debug: 888 2861 riscv-013.c:623 abstract_cmd_batch_check_and_clear_cmderr(): [riscv.cpu] abstractcs=0x2000002 {datacount=2 relaxedpriv=full_checks busy=ready progbufsize=2 cmderr=none}
+Debug: 889 2861 batch.c:291 riscv_batch_run_from(): [riscv.cpu] Running batch of scans [0, 2)
+Debug: 890 2861 batch.c:255 log_batch(): 40b r 00000000 @04 -> + 00000000 @00; 1i
+Debug: 891 2861 batch.c:255 log_batch(): 40b - 00000000 @00 -> + 101100f6 @04; 1i
+Debug: 892 2861 batch.c:199 log_dmi_decoded(): read: 
+Debug: 893 2861 riscv-013.c:1586 register_read_direct(): [riscv.cpu] ra = 0x101100f6
+Debug: 894 2861 riscv_reg.c:999 riscv_reg_get(): [riscv.cpu] Read ra: 0x101100f6
+Debug: 895 2861 riscv-013_reg.c:40 riscv013_reg_get(): [riscv.cpu] Read 0x101100f6 from ra (valid=1).
+Debug: 896 2861 riscv_reg.c:990 riscv_reg_get(): [riscv.cpu] Reading sp from target
+Debug: 897 2861 riscv-013.c:5083 riscv013_get_register(): [riscv.cpu] reading register sp
+Debug: 898 2861 riscv-013.c:1567 register_read_direct(): [riscv.cpu] Reading sp
+Debug: 899 2861 riscv-013.c:664 riscv013_execute_abstract_command(): [riscv.cpu] access register=0x221002 {regno=0x1002 write=arg0 transfer=enabled postexec=disabled aarpostincrement=disabled aarsize=32bit}
+Debug: 900 2861 batch.c:291 riscv_batch_run_from(): [riscv.cpu] Running batch of scans [0, 3)
+Debug: 901 2862 batch.c:255 log_batch(): 40b w 00221002 @17 -> + 00000000 @00; 1i
+Debug: 902 2862 batch.c:199 log_dmi_decoded(): write: command=0x221002 {control=0x221002}
+Debug: 903 2862 batch.c:255 log_batch(): 40b r 00000000 @16 -> + 00221002 @17; 1i
+Debug: 904 2862 batch.c:255 log_batch(): 40b - 00000000 @00 -> + 02000002 @16; 1i
+Debug: 905 2862 batch.c:199 log_dmi_decoded(): read: abstractcs=0x2000002 {datacount=2 progbufsize=2}
+Debug: 906 2862 riscv-013.c:623 abstract_cmd_batch_check_and_clear_cmderr(): [riscv.cpu] abstractcs=0x2000002 {datacount=2 relaxedpriv=full_checks busy=ready progbufsize=2 cmderr=none}
+Debug: 907 2862 batch.c:291 riscv_batch_run_from(): [riscv.cpu] Running batch of scans [0, 2)
+Debug: 908 2862 batch.c:255 log_batch(): 40b r 00000000 @04 -> + 00000000 @00; 1i
+Debug: 909 2862 batch.c:255 log_batch(): 40b - 00000000 @00 -> + 10110248 @04; 1i
+Debug: 910 2862 batch.c:199 log_dmi_decoded(): read: 
+Debug: 911 2862 riscv-013.c:1586 register_read_direct(): [riscv.cpu] sp = 0x10110248
+Debug: 912 2862 riscv_reg.c:999 riscv_reg_get(): [riscv.cpu] Read sp: 0x10110248
+Debug: 913 2862 riscv-013_reg.c:40 riscv013_reg_get(): [riscv.cpu] Read 0x10110248 from sp (valid=1).
+Debug: 914 2862 riscv_reg.c:990 riscv_reg_get(): [riscv.cpu] Reading gp from target
+Debug: 915 2862 riscv-013.c:5083 riscv013_get_register(): [riscv.cpu] reading register gp
+Debug: 916 2862 riscv-013.c:1567 register_read_direct(): [riscv.cpu] Reading gp
+Debug: 917 2862 riscv-013.c:664 riscv013_execute_abstract_command(): [riscv.cpu] access register=0x221003 {regno=0x1003 write=arg0 transfer=enabled postexec=disabled aarpostincrement=disabled aarsize=32bit}
+Debug: 918 2862 batch.c:291 riscv_batch_run_from(): [riscv.cpu] Running batch of scans [0, 3)
+Debug: 919 2862 batch.c:255 log_batch(): 40b w 00221003 @17 -> + 00000000 @00; 1i
+Debug: 920 2862 batch.c:199 log_dmi_decoded(): write: command=0x221003 {control=0x221003}
+Debug: 921 2862 batch.c:255 log_batch(): 40b r 00000000 @16 -> + 00221003 @17; 1i
+Debug: 922 2862 batch.c:255 log_batch(): 40b - 00000000 @00 -> + 02000002 @16; 1i
+Debug: 923 2862 batch.c:199 log_dmi_decoded(): read: abstractcs=0x2000002 {datacount=2 progbufsize=2}
+Debug: 924 2862 riscv-013.c:623 abstract_cmd_batch_check_and_clear_cmderr(): [riscv.cpu] abstractcs=0x2000002 {datacount=2 relaxedpriv=full_checks busy=ready progbufsize=2 cmderr=none}
+Debug: 925 2862 batch.c:291 riscv_batch_run_from(): [riscv.cpu] Running batch of scans [0, 2)
+Debug: 926 2862 batch.c:255 log_batch(): 40b r 00000000 @04 -> + 00000000 @00; 1i
+Debug: 927 2862 batch.c:255 log_batch(): 40b - 00000000 @00 -> + 10110a7c @04; 1i
+Debug: 928 2862 batch.c:199 log_dmi_decoded(): read: 
+Debug: 929 2862 riscv-013.c:1586 register_read_direct(): [riscv.cpu] gp = 0x10110a7c
+Debug: 930 2862 riscv_reg.c:999 riscv_reg_get(): [riscv.cpu] Read gp: 0x10110a7c
+Debug: 931 2862 riscv-013_reg.c:40 riscv013_reg_get(): [riscv.cpu] Read 0x10110a7c from gp (valid=1).
+Debug: 932 2862 riscv_reg.c:990 riscv_reg_get(): [riscv.cpu] Reading tp from target
+Debug: 933 2862 riscv-013.c:5083 riscv013_get_register(): [riscv.cpu] reading register tp
+Debug: 934 2862 riscv-013.c:1567 register_read_direct(): [riscv.cpu] Reading tp
+Debug: 935 2862 riscv-013.c:664 riscv013_execute_abstract_command(): [riscv.cpu] access register=0x221004 {regno=0x1004 write=arg0 transfer=enabled postexec=disabled aarpostincrement=disabled aarsize=32bit}
+Debug: 936 2862 batch.c:291 riscv_batch_run_from(): [riscv.cpu] Running batch of scans [0, 3)
+Debug: 937 2863 batch.c:255 log_batch(): 40b w 00221004 @17 -> + 00000000 @00; 1i
+Debug: 938 2863 batch.c:199 log_dmi_decoded(): write: command=0x221004 {control=0x221004}
+Debug: 939 2863 batch.c:255 log_batch(): 40b r 00000000 @16 -> + 00221004 @17; 1i
+Debug: 940 2863 batch.c:255 log_batch(): 40b - 00000000 @00 -> + 02000002 @16; 1i
+Debug: 941 2863 batch.c:199 log_dmi_decoded(): read: abstractcs=0x2000002 {datacount=2 progbufsize=2}
+Debug: 942 2863 riscv-013.c:623 abstract_cmd_batch_check_and_clear_cmderr(): [riscv.cpu] abstractcs=0x2000002 {datacount=2 relaxedpriv=full_checks busy=ready progbufsize=2 cmderr=none}
+Debug: 943 2863 batch.c:291 riscv_batch_run_from(): [riscv.cpu] Running batch of scans [0, 2)
+Debug: 944 2863 batch.c:255 log_batch(): 40b r 00000000 @04 -> + 00000000 @00; 1i
+Debug: 945 2863 batch.c:255 log_batch(): 40b - 00000000 @00 -> + 00000000 @04; 1i
+Debug: 946 2863 batch.c:199 log_dmi_decoded(): read: 
+Debug: 947 2863 riscv-013.c:1586 register_read_direct(): [riscv.cpu] tp = 0x0
+Debug: 948 2863 riscv_reg.c:999 riscv_reg_get(): [riscv.cpu] Read tp: 0x0
+Debug: 949 2863 riscv-013_reg.c:40 riscv013_reg_get(): [riscv.cpu] Read 0x00000000 from tp (valid=1).
+Debug: 950 2863 riscv_reg.c:990 riscv_reg_get(): [riscv.cpu] Reading t0 from target
+Debug: 951 2863 riscv-013.c:5083 riscv013_get_register(): [riscv.cpu] reading register t0
+Debug: 952 2863 riscv-013.c:1567 register_read_direct(): [riscv.cpu] Reading t0
+Debug: 953 2863 riscv-013.c:664 riscv013_execute_abstract_command(): [riscv.cpu] access register=0x221005 {regno=0x1005 write=arg0 transfer=enabled postexec=disabled aarpostincrement=disabled aarsize=32bit}
+Debug: 954 2863 batch.c:291 riscv_batch_run_from(): [riscv.cpu] Running batch of scans [0, 3)
+Debug: 955 2863 batch.c:255 log_batch(): 40b w 00221005 @17 -> + 00000000 @00; 1i
+Debug: 956 2863 batch.c:199 log_dmi_decoded(): write: command=0x221005 {control=0x221005}
+Debug: 957 2863 batch.c:255 log_batch(): 40b r 00000000 @16 -> + 00221005 @17; 1i
+Debug: 958 2863 batch.c:255 log_batch(): 40b - 00000000 @00 -> + 02000002 @16; 1i
+Debug: 959 2863 batch.c:199 log_dmi_decoded(): read: abstractcs=0x2000002 {datacount=2 progbufsize=2}
+Debug: 960 2863 riscv-013.c:623 abstract_cmd_batch_check_and_clear_cmderr(): [riscv.cpu] abstractcs=0x2000002 {datacount=2 relaxedpriv=full_checks busy=ready progbufsize=2 cmderr=none}
+Debug: 961 2863 batch.c:291 riscv_batch_run_from(): [riscv.cpu] Running batch of scans [0, 2)
+Debug: 962 2863 batch.c:255 log_batch(): 40b r 00000000 @04 -> + 00000000 @00; 1i
+Debug: 963 2863 batch.c:255 log_batch(): 40b - 00000000 @00 -> + 1011027c @04; 1i
+Debug: 964 2863 batch.c:199 log_dmi_decoded(): read: 
+Debug: 965 2863 riscv-013.c:1586 register_read_direct(): [riscv.cpu] t0 = 0x1011027c
+Debug: 966 2863 riscv_reg.c:999 riscv_reg_get(): [riscv.cpu] Read t0: 0x1011027c
+Debug: 967 2864 riscv-013_reg.c:40 riscv013_reg_get(): [riscv.cpu] Read 0x1011027c from t0 (valid=1).
+Debug: 968 2864 riscv_reg.c:990 riscv_reg_get(): [riscv.cpu] Reading t1 from target
+Debug: 969 2864 riscv-013.c:5083 riscv013_get_register(): [riscv.cpu] reading register t1
+Debug: 970 2864 riscv-013.c:1567 register_read_direct(): [riscv.cpu] Reading t1
+Debug: 971 2864 riscv-013.c:664 riscv013_execute_abstract_command(): [riscv.cpu] access register=0x221006 {regno=0x1006 write=arg0 transfer=enabled postexec=disabled aarpostincrement=disabled aarsize=32bit}
+Debug: 972 2864 batch.c:291 riscv_batch_run_from(): [riscv.cpu] Running batch of scans [0, 3)
+Debug: 973 2864 batch.c:255 log_batch(): 40b w 00221006 @17 -> + 00000000 @00; 1i
+Debug: 974 2864 batch.c:199 log_dmi_decoded(): write: command=0x221006 {control=0x221006}
+Debug: 975 2864 batch.c:255 log_batch(): 40b r 00000000 @16 -> + 00221006 @17; 1i
+Debug: 976 2864 batch.c:255 log_batch(): 40b - 00000000 @00 -> + 02000002 @16; 1i
+Debug: 977 2864 batch.c:199 log_dmi_decoded(): read: abstractcs=0x2000002 {datacount=2 progbufsize=2}
+Debug: 978 2864 riscv-013.c:623 abstract_cmd_batch_check_and_clear_cmderr(): [riscv.cpu] abstractcs=0x2000002 {datacount=2 relaxedpriv=full_checks busy=ready progbufsize=2 cmderr=none}
+Debug: 979 2864 batch.c:291 riscv_batch_run_from(): [riscv.cpu] Running batch of scans [0, 2)
+Debug: 980 2864 batch.c:255 log_batch(): 40b r 00000000 @04 -> + 00000000 @00; 1i
+Debug: 981 2864 batch.c:255 log_batch(): 40b - 00000000 @00 -> + 1011027c @04; 1i
+Debug: 982 2864 batch.c:199 log_dmi_decoded(): read: 
+Debug: 983 2864 riscv-013.c:1586 register_read_direct(): [riscv.cpu] t1 = 0x1011027c
+Debug: 984 2864 riscv_reg.c:999 riscv_reg_get(): [riscv.cpu] Read t1: 0x1011027c
+Debug: 985 2864 riscv-013_reg.c:40 riscv013_reg_get(): [riscv.cpu] Read 0x1011027c from t1 (valid=1).
+Debug: 986 2864 riscv_reg.c:990 riscv_reg_get(): [riscv.cpu] Reading t2 from target
+Debug: 987 2864 riscv-013.c:5083 riscv013_get_register(): [riscv.cpu] reading register t2
+Debug: 988 2864 riscv-013.c:1567 register_read_direct(): [riscv.cpu] Reading t2
+Debug: 989 2864 riscv-013.c:664 riscv013_execute_abstract_command(): [riscv.cpu] access register=0x221007 {regno=0x1007 write=arg0 transfer=enabled postexec=disabled aarpostincrement=disabled aarsize=32bit}
+Debug: 990 2864 batch.c:291 riscv_batch_run_from(): [riscv.cpu] Running batch of scans [0, 3)
+Debug: 991 2864 batch.c:255 log_batch(): 40b w 00221007 @17 -> + 00000000 @00; 1i
+Debug: 992 2864 batch.c:199 log_dmi_decoded(): write: command=0x221007 {control=0x221007}
+Debug: 993 2864 batch.c:255 log_batch(): 40b r 00000000 @16 -> + 00221007 @17; 1i
+Debug: 994 2864 batch.c:255 log_batch(): 40b - 00000000 @00 -> + 02000002 @16; 1i
+Debug: 995 2864 batch.c:199 log_dmi_decoded(): read: abstractcs=0x2000002 {datacount=2 progbufsize=2}
+Debug: 996 2864 riscv-013.c:623 abstract_cmd_batch_check_and_clear_cmderr(): [riscv.cpu] abstractcs=0x2000002 {datacount=2 relaxedpriv=full_checks busy=ready progbufsize=2 cmderr=none}
+Debug: 997 2864 batch.c:291 riscv_batch_run_from(): [riscv.cpu] Running batch of scans [0, 2)
+Debug: 998 2865 batch.c:255 log_batch(): 40b r 00000000 @04 -> + 00000000 @00; 1i
+Debug: 999 2865 batch.c:255 log_batch(): 40b - 00000000 @00 -> + 00100000 @04; 1i
+Debug: 1000 2865 batch.c:199 log_dmi_decoded(): read: 
+Debug: 1001 2865 riscv-013.c:1586 register_read_direct(): [riscv.cpu] t2 = 0x100000
+Debug: 1002 2865 riscv_reg.c:999 riscv_reg_get(): [riscv.cpu] Read t2: 0x100000
+Debug: 1003 2865 riscv-013_reg.c:40 riscv013_reg_get(): [riscv.cpu] Read 0x00100000 from t2 (valid=1).
+Debug: 1004 2865 riscv_reg.c:990 riscv_reg_get(): [riscv.cpu] Reading fp from target
+Debug: 1005 2865 riscv-013.c:5083 riscv013_get_register(): [riscv.cpu] reading register fp
+Debug: 1006 2865 riscv-013.c:1567 register_read_direct(): [riscv.cpu] Reading fp
+Debug: 1007 2865 riscv-013.c:664 riscv013_execute_abstract_command(): [riscv.cpu] access register=0x221008 {regno=0x1008 write=arg0 transfer=enabled postexec=disabled aarpostincrement=disabled aarsize=32bit}
+Debug: 1008 2865 batch.c:291 riscv_batch_run_from(): [riscv.cpu] Running batch of scans [0, 3)
+Debug: 1009 2865 batch.c:255 log_batch(): 40b w 00221008 @17 -> + 00000000 @00; 1i
+Debug: 1010 2865 batch.c:199 log_dmi_decoded(): write: command=0x221008 {control=0x221008}
+Debug: 1011 2865 batch.c:255 log_batch(): 40b r 00000000 @16 -> + 00221008 @17; 1i
+Debug: 1012 2865 batch.c:255 log_batch(): 40b - 00000000 @00 -> + 02000002 @16; 1i
+Debug: 1013 2865 batch.c:199 log_dmi_decoded(): read: abstractcs=0x2000002 {datacount=2 progbufsize=2}
+Debug: 1014 2865 riscv-013.c:623 abstract_cmd_batch_check_and_clear_cmderr(): [riscv.cpu] abstractcs=0x2000002 {datacount=2 relaxedpriv=full_checks busy=ready progbufsize=2 cmderr=none}
+Debug: 1015 2865 batch.c:291 riscv_batch_run_from(): [riscv.cpu] Running batch of scans [0, 2)
+Debug: 1016 2865 batch.c:255 log_batch(): 40b r 00000000 @04 -> + 00000000 @00; 1i
+Debug: 1017 2865 batch.c:255 log_batch(): 40b - 00000000 @00 -> + 10110278 @04; 1i
+Debug: 1018 2865 batch.c:199 log_dmi_decoded(): read: 
+Debug: 1019 2865 riscv-013.c:1586 register_read_direct(): [riscv.cpu] fp = 0x10110278
+Debug: 1020 2865 riscv_reg.c:999 riscv_reg_get(): [riscv.cpu] Read fp: 0x10110278
+Debug: 1021 2865 riscv-013_reg.c:40 riscv013_reg_get(): [riscv.cpu] Read 0x10110278 from fp (valid=1).
+Debug: 1022 2865 riscv_reg.c:990 riscv_reg_get(): [riscv.cpu] Reading s1 from target
+Debug: 1023 2865 riscv-013.c:5083 riscv013_get_register(): [riscv.cpu] reading register s1
+Debug: 1024 2865 riscv-013.c:1567 register_read_direct(): [riscv.cpu] Reading s1
+Debug: 1025 2865 riscv-013.c:664 riscv013_execute_abstract_command(): [riscv.cpu] access register=0x221009 {regno=0x1009 write=arg0 transfer=enabled postexec=disabled aarpostincrement=disabled aarsize=32bit}
+Debug: 1026 2865 batch.c:291 riscv_batch_run_from(): [riscv.cpu] Running batch of scans [0, 3)
+Debug: 1027 2866 batch.c:255 log_batch(): 40b w 00221009 @17 -> + 00000000 @00; 1i
+Debug: 1028 2866 batch.c:199 log_dmi_decoded(): write: command=0x221009 {control=0x221009}
+Debug: 1029 2866 batch.c:255 log_batch(): 40b r 00000000 @16 -> + 00221009 @17; 1i
+Debug: 1030 2866 batch.c:255 log_batch(): 40b - 00000000 @00 -> + 02000002 @16; 1i
+Debug: 1031 2866 batch.c:199 log_dmi_decoded(): read: abstractcs=0x2000002 {datacount=2 progbufsize=2}
+Debug: 1032 2866 riscv-013.c:623 abstract_cmd_batch_check_and_clear_cmderr(): [riscv.cpu] abstractcs=0x2000002 {datacount=2 relaxedpriv=full_checks busy=ready progbufsize=2 cmderr=none}
+Debug: 1033 2866 batch.c:291 riscv_batch_run_from(): [riscv.cpu] Running batch of scans [0, 2)
+Debug: 1034 2866 batch.c:255 log_batch(): 40b r 00000000 @04 -> + 00000000 @00; 1i
+Debug: 1035 2866 batch.c:255 log_batch(): 40b - 00000000 @00 -> + 00000000 @04; 1i
+Debug: 1036 2866 batch.c:199 log_dmi_decoded(): read: 
+Debug: 1037 2866 riscv-013.c:1586 register_read_direct(): [riscv.cpu] s1 = 0x0
+Debug: 1038 2866 riscv_reg.c:999 riscv_reg_get(): [riscv.cpu] Read s1: 0x0
+Debug: 1039 2866 riscv-013_reg.c:40 riscv013_reg_get(): [riscv.cpu] Read 0x00000000 from s1 (valid=1).
+Debug: 1040 2866 riscv_reg.c:990 riscv_reg_get(): [riscv.cpu] Reading a0 from target
+Debug: 1041 2866 riscv-013.c:5083 riscv013_get_register(): [riscv.cpu] reading register a0
+Debug: 1042 2866 riscv-013.c:1567 register_read_direct(): [riscv.cpu] Reading a0
+Debug: 1043 2866 riscv-013.c:664 riscv013_execute_abstract_command(): [riscv.cpu] access register=0x22100a {regno=0x100a write=arg0 transfer=enabled postexec=disabled aarpostincrement=disabled aarsize=32bit}
+Debug: 1044 2866 batch.c:291 riscv_batch_run_from(): [riscv.cpu] Running batch of scans [0, 3)
+Debug: 1045 2866 batch.c:255 log_batch(): 40b w 0022100a @17 -> + 00000000 @00; 1i
+Debug: 1046 2866 batch.c:199 log_dmi_decoded(): write: command=0x22100a {control=0x22100a}
+Debug: 1047 2866 batch.c:255 log_batch(): 40b r 00000000 @16 -> + 0022100a @17; 1i
+Debug: 1048 2866 batch.c:255 log_batch(): 40b - 00000000 @00 -> + 02000002 @16; 1i
+Debug: 1049 2866 batch.c:199 log_dmi_decoded(): read: abstractcs=0x2000002 {datacount=2 progbufsize=2}
+Debug: 1050 2866 riscv-013.c:623 abstract_cmd_batch_check_and_clear_cmderr(): [riscv.cpu] abstractcs=0x2000002 {datacount=2 relaxedpriv=full_checks busy=ready progbufsize=2 cmderr=none}
+Debug: 1051 2866 batch.c:291 riscv_batch_run_from(): [riscv.cpu] Running batch of scans [0, 2)
+Debug: 1052 2866 batch.c:255 log_batch(): 40b r 00000000 @04 -> + 00000000 @00; 1i
+Debug: 1053 2866 batch.c:255 log_batch(): 40b - 00000000 @00 -> + 0000000a @04; 1i
+Debug: 1054 2866 batch.c:199 log_dmi_decoded(): read: 
+Debug: 1055 2866 riscv-013.c:1586 register_read_direct(): [riscv.cpu] a0 = 0xa
+Debug: 1056 2866 riscv_reg.c:999 riscv_reg_get(): [riscv.cpu] Read a0: 0xa
+Debug: 1057 2866 riscv-013_reg.c:40 riscv013_reg_get(): [riscv.cpu] Read 0x0000000a from a0 (valid=1).
+Debug: 1058 2866 riscv_reg.c:990 riscv_reg_get(): [riscv.cpu] Reading a1 from target
+Debug: 1059 2866 riscv-013.c:5083 riscv013_get_register(): [riscv.cpu] reading register a1
+Debug: 1060 2866 riscv-013.c:1567 register_read_direct(): [riscv.cpu] Reading a1
+Debug: 1061 2866 riscv-013.c:664 riscv013_execute_abstract_command(): [riscv.cpu] access register=0x22100b {regno=0x100b write=arg0 transfer=enabled postexec=disabled aarpostincrement=disabled aarsize=32bit}
+Debug: 1062 2866 batch.c:291 riscv_batch_run_from(): [riscv.cpu] Running batch of scans [0, 3)
+Debug: 1063 2867 batch.c:255 log_batch(): 40b w 0022100b @17 -> + 00000000 @00; 1i
+Debug: 1064 2867 batch.c:199 log_dmi_decoded(): write: command=0x22100b {control=0x22100b}
+Debug: 1065 2867 batch.c:255 log_batch(): 40b r 00000000 @16 -> + 0022100b @17; 1i
+Debug: 1066 2867 batch.c:255 log_batch(): 40b - 00000000 @00 -> + 02000002 @16; 1i
+Debug: 1067 2867 batch.c:199 log_dmi_decoded(): read: abstractcs=0x2000002 {datacount=2 progbufsize=2}
+Debug: 1068 2867 riscv-013.c:623 abstract_cmd_batch_check_and_clear_cmderr(): [riscv.cpu] abstractcs=0x2000002 {datacount=2 relaxedpriv=full_checks busy=ready progbufsize=2 cmderr=none}
+Debug: 1069 2867 batch.c:291 riscv_batch_run_from(): [riscv.cpu] Running batch of scans [0, 2)
+Debug: 1070 2867 batch.c:255 log_batch(): 40b r 00000000 @04 -> + 00000000 @00; 1i
+Debug: 1071 2867 batch.c:255 log_batch(): 40b - 00000000 @00 -> + 00000014 @04; 1i
+Debug: 1072 2867 batch.c:199 log_dmi_decoded(): read: 
+Debug: 1073 2867 riscv-013.c:1586 register_read_direct(): [riscv.cpu] a1 = 0x14
+Debug: 1074 2867 riscv_reg.c:999 riscv_reg_get(): [riscv.cpu] Read a1: 0x14
+Debug: 1075 2867 riscv-013_reg.c:40 riscv013_reg_get(): [riscv.cpu] Read 0x00000014 from a1 (valid=1).
+Debug: 1076 2867 riscv_reg.c:990 riscv_reg_get(): [riscv.cpu] Reading a2 from target
+Debug: 1077 2867 riscv-013.c:5083 riscv013_get_register(): [riscv.cpu] reading register a2
+Debug: 1078 2867 riscv-013.c:1567 register_read_direct(): [riscv.cpu] Reading a2
+Debug: 1079 2867 riscv-013.c:664 riscv013_execute_abstract_command(): [riscv.cpu] access register=0x22100c {regno=0x100c write=arg0 transfer=enabled postexec=disabled aarpostincrement=disabled aarsize=32bit}
+Debug: 1080 2867 batch.c:291 riscv_batch_run_from(): [riscv.cpu] Running batch of scans [0, 3)
+Debug: 1081 2867 batch.c:255 log_batch(): 40b w 0022100c @17 -> + 00000000 @00; 1i
+Debug: 1082 2867 batch.c:199 log_dmi_decoded(): write: command=0x22100c {control=0x22100c}
+Debug: 1083 2867 batch.c:255 log_batch(): 40b r 00000000 @16 -> + 0022100c @17; 1i
+Debug: 1084 2867 batch.c:255 log_batch(): 40b - 00000000 @00 -> + 02000002 @16; 1i
+Debug: 1085 2867 batch.c:199 log_dmi_decoded(): read: abstractcs=0x2000002 {datacount=2 progbufsize=2}
+Debug: 1086 2867 riscv-013.c:623 abstract_cmd_batch_check_and_clear_cmderr(): [riscv.cpu] abstractcs=0x2000002 {datacount=2 relaxedpriv=full_checks busy=ready progbufsize=2 cmderr=none}
+Debug: 1087 2867 batch.c:291 riscv_batch_run_from(): [riscv.cpu] Running batch of scans [0, 2)
+Debug: 1088 2867 batch.c:255 log_batch(): 40b r 00000000 @04 -> + 00000000 @00; 1i
+Debug: 1089 2867 batch.c:255 log_batch(): 40b - 00000000 @00 -> + 00000000 @04; 1i
+Debug: 1090 2867 batch.c:199 log_dmi_decoded(): read: 
+Debug: 1091 2867 riscv-013.c:1586 register_read_direct(): [riscv.cpu] a2 = 0x0
+Debug: 1092 2867 riscv_reg.c:999 riscv_reg_get(): [riscv.cpu] Read a2: 0x0
+Debug: 1093 2867 riscv-013_reg.c:40 riscv013_reg_get(): [riscv.cpu] Read 0x00000000 from a2 (valid=1).
+Debug: 1094 2867 riscv_reg.c:990 riscv_reg_get(): [riscv.cpu] Reading a3 from target
+Debug: 1095 2867 riscv-013.c:5083 riscv013_get_register(): [riscv.cpu] reading register a3
+Debug: 1096 2867 riscv-013.c:1567 register_read_direct(): [riscv.cpu] Reading a3
+Debug: 1097 2867 riscv-013.c:664 riscv013_execute_abstract_command(): [riscv.cpu] access register=0x22100d {regno=0x100d write=arg0 transfer=enabled postexec=disabled aarpostincrement=disabled aarsize=32bit}
+Debug: 1098 2867 batch.c:291 riscv_batch_run_from(): [riscv.cpu] Running batch of scans [0, 3)
+Debug: 1099 2868 batch.c:255 log_batch(): 40b w 0022100d @17 -> + 00000000 @00; 1i
+Debug: 1100 2868 batch.c:199 log_dmi_decoded(): write: command=0x22100d {control=0x22100d}
+Debug: 1101 2868 batch.c:255 log_batch(): 40b r 00000000 @16 -> + 0022100d @17; 1i
+Debug: 1102 2868 batch.c:255 log_batch(): 40b - 00000000 @00 -> + 02000002 @16; 1i
+Debug: 1103 2868 batch.c:199 log_dmi_decoded(): read: abstractcs=0x2000002 {datacount=2 progbufsize=2}
+Debug: 1104 2868 riscv-013.c:623 abstract_cmd_batch_check_and_clear_cmderr(): [riscv.cpu] abstractcs=0x2000002 {datacount=2 relaxedpriv=full_checks busy=ready progbufsize=2 cmderr=none}
+Debug: 1105 2868 batch.c:291 riscv_batch_run_from(): [riscv.cpu] Running batch of scans [0, 2)
+Debug: 1106 2868 batch.c:255 log_batch(): 40b r 00000000 @04 -> + 00000000 @00; 1i
+Debug: 1107 2868 batch.c:255 log_batch(): 40b - 00000000 @00 -> + 00000000 @04; 1i
+Debug: 1108 2868 batch.c:199 log_dmi_decoded(): read: 
+Debug: 1109 2868 riscv-013.c:1586 register_read_direct(): [riscv.cpu] a3 = 0x0
+Debug: 1110 2868 riscv_reg.c:999 riscv_reg_get(): [riscv.cpu] Read a3: 0x0
+Debug: 1111 2868 riscv-013_reg.c:40 riscv013_reg_get(): [riscv.cpu] Read 0x00000000 from a3 (valid=1).
+Debug: 1112 2868 riscv_reg.c:990 riscv_reg_get(): [riscv.cpu] Reading a4 from target
+Debug: 1113 2868 riscv-013.c:5083 riscv013_get_register(): [riscv.cpu] reading register a4
+Debug: 1114 2868 riscv-013.c:1567 register_read_direct(): [riscv.cpu] Reading a4
+Debug: 1115 2868 riscv-013.c:664 riscv013_execute_abstract_command(): [riscv.cpu] access register=0x22100e {regno=0x100e write=arg0 transfer=enabled postexec=disabled aarpostincrement=disabled aarsize=32bit}
+Debug: 1116 2868 batch.c:291 riscv_batch_run_from(): [riscv.cpu] Running batch of scans [0, 3)
+Debug: 1117 2868 batch.c:255 log_batch(): 40b w 0022100e @17 -> + 00000000 @00; 1i
+Debug: 1118 2868 batch.c:199 log_dmi_decoded(): write: command=0x22100e {control=0x22100e}
+Debug: 1119 2868 batch.c:255 log_batch(): 40b r 00000000 @16 -> + 0022100e @17; 1i
+Debug: 1120 2868 batch.c:255 log_batch(): 40b - 00000000 @00 -> + 02000002 @16; 1i
+Debug: 1121 2868 batch.c:199 log_dmi_decoded(): read: abstractcs=0x2000002 {datacount=2 progbufsize=2}
+Debug: 1122 2868 riscv-013.c:623 abstract_cmd_batch_check_and_clear_cmderr(): [riscv.cpu] abstractcs=0x2000002 {datacount=2 relaxedpriv=full_checks busy=ready progbufsize=2 cmderr=none}
+Debug: 1123 2868 batch.c:291 riscv_batch_run_from(): [riscv.cpu] Running batch of scans [0, 2)
+Debug: 1124 2868 batch.c:255 log_batch(): 40b r 00000000 @04 -> + 00000000 @00; 1i
+Debug: 1125 2869 batch.c:255 log_batch(): 40b - 00000000 @00 -> + 00000003 @04; 1i
+Debug: 1126 2869 batch.c:199 log_dmi_decoded(): read: 
+Debug: 1127 2869 riscv-013.c:1586 register_read_direct(): [riscv.cpu] a4 = 0x3
+Debug: 1128 2869 riscv_reg.c:999 riscv_reg_get(): [riscv.cpu] Read a4: 0x3
+Debug: 1129 2869 riscv-013_reg.c:40 riscv013_reg_get(): [riscv.cpu] Read 0x00000003 from a4 (valid=1).
+Debug: 1130 2869 riscv_reg.c:990 riscv_reg_get(): [riscv.cpu] Reading a5 from target
+Debug: 1131 2869 riscv-013.c:5083 riscv013_get_register(): [riscv.cpu] reading register a5
+Debug: 1132 2869 riscv-013.c:1567 register_read_direct(): [riscv.cpu] Reading a5
+Debug: 1133 2869 riscv-013.c:664 riscv013_execute_abstract_command(): [riscv.cpu] access register=0x22100f {regno=0x100f write=arg0 transfer=enabled postexec=disabled aarpostincrement=disabled aarsize=32bit}
+Debug: 1134 2869 batch.c:291 riscv_batch_run_from(): [riscv.cpu] Running batch of scans [0, 3)
+Debug: 1135 2869 batch.c:255 log_batch(): 40b w 0022100f @17 -> + 00000000 @00; 1i
+Debug: 1136 2869 batch.c:199 log_dmi_decoded(): write: command=0x22100f {control=0x22100f}
+Debug: 1137 2869 batch.c:255 log_batch(): 40b r 00000000 @16 -> + 0022100f @17; 1i
+Debug: 1138 2869 batch.c:255 log_batch(): 40b - 00000000 @00 -> + 02000002 @16; 1i
+Debug: 1139 2869 batch.c:199 log_dmi_decoded(): read: abstractcs=0x2000002 {datacount=2 progbufsize=2}
+Debug: 1140 2869 riscv-013.c:623 abstract_cmd_batch_check_and_clear_cmderr(): [riscv.cpu] abstractcs=0x2000002 {datacount=2 relaxedpriv=full_checks busy=ready progbufsize=2 cmderr=none}
+Debug: 1141 2869 batch.c:291 riscv_batch_run_from(): [riscv.cpu] Running batch of scans [0, 2)
+Debug: 1142 2869 batch.c:255 log_batch(): 40b r 00000000 @04 -> + 00000000 @00; 1i
+Debug: 1143 2869 batch.c:255 log_batch(): 40b - 00000000 @00 -> + 00000002 @04; 1i
+Debug: 1144 2869 batch.c:199 log_dmi_decoded(): read: 
+Debug: 1145 2869 riscv-013.c:1586 register_read_direct(): [riscv.cpu] a5 = 0x2
+Debug: 1146 2869 riscv_reg.c:999 riscv_reg_get(): [riscv.cpu] Read a5: 0x2
+Debug: 1147 2869 riscv-013_reg.c:40 riscv013_reg_get(): [riscv.cpu] Read 0x00000002 from a5 (valid=1).
+Debug: 1148 2869 riscv_reg.c:990 riscv_reg_get(): [riscv.cpu] Reading a6 from target
+Debug: 1149 2869 riscv-013.c:5083 riscv013_get_register(): [riscv.cpu] reading register a6
+Debug: 1150 2869 riscv-013.c:1567 register_read_direct(): [riscv.cpu] Reading a6
+Debug: 1151 2869 riscv-013.c:664 riscv013_execute_abstract_command(): [riscv.cpu] access register=0x221010 {regno=0x1010 write=arg0 transfer=enabled postexec=disabled aarpostincrement=disabled aarsize=32bit}
+Debug: 1152 2869 batch.c:291 riscv_batch_run_from(): [riscv.cpu] Running batch of scans [0, 3)
+Debug: 1153 2869 batch.c:255 log_batch(): 40b w 00221010 @17 -> + 00000000 @00; 1i
+Debug: 1154 2869 batch.c:199 log_dmi_decoded(): write: command=0x221010 {control=0x221010}
+Debug: 1155 2869 batch.c:255 log_batch(): 40b r 00000000 @16 -> + 00221010 @17; 1i
+Debug: 1156 2869 batch.c:255 log_batch(): 40b - 00000000 @00 -> + 02000002 @16; 1i
+Debug: 1157 2869 batch.c:199 log_dmi_decoded(): read: abstractcs=0x2000002 {datacount=2 progbufsize=2}
+Debug: 1158 2869 riscv-013.c:623 abstract_cmd_batch_check_and_clear_cmderr(): [riscv.cpu] abstractcs=0x2000002 {datacount=2 relaxedpriv=full_checks busy=ready progbufsize=2 cmderr=none}
+Debug: 1159 2869 batch.c:291 riscv_batch_run_from(): [riscv.cpu] Running batch of scans [0, 2)
+Debug: 1160 2870 batch.c:255 log_batch(): 40b r 00000000 @04 -> + 00000000 @00; 1i
+Debug: 1161 2870 batch.c:255 log_batch(): 40b - 00000000 @00 -> + 00000000 @04; 1i
+Debug: 1162 2870 batch.c:199 log_dmi_decoded(): read: 
+Debug: 1163 2870 riscv-013.c:1586 register_read_direct(): [riscv.cpu] a6 = 0x0
+Debug: 1164 2870 riscv_reg.c:999 riscv_reg_get(): [riscv.cpu] Read a6: 0x0
+Debug: 1165 2870 riscv-013_reg.c:40 riscv013_reg_get(): [riscv.cpu] Read 0x00000000 from a6 (valid=1).
+Debug: 1166 2870 riscv_reg.c:990 riscv_reg_get(): [riscv.cpu] Reading a7 from target
+Debug: 1167 2870 riscv-013.c:5083 riscv013_get_register(): [riscv.cpu] reading register a7
+Debug: 1168 2870 riscv-013.c:1567 register_read_direct(): [riscv.cpu] Reading a7
+Debug: 1169 2870 riscv-013.c:664 riscv013_execute_abstract_command(): [riscv.cpu] access register=0x221011 {regno=0x1011 write=arg0 transfer=enabled postexec=disabled aarpostincrement=disabled aarsize=32bit}
+Debug: 1170 2870 batch.c:291 riscv_batch_run_from(): [riscv.cpu] Running batch of scans [0, 3)
+Debug: 1171 2870 batch.c:255 log_batch(): 40b w 00221011 @17 -> + 00000000 @00; 1i
+Debug: 1172 2870 batch.c:199 log_dmi_decoded(): write: command=0x221011 {control=0x221011}
+Debug: 1173 2870 batch.c:255 log_batch(): 40b r 00000000 @16 -> + 00221011 @17; 1i
+Debug: 1174 2870 batch.c:255 log_batch(): 40b - 00000000 @00 -> + 02000002 @16; 1i
+Debug: 1175 2870 batch.c:199 log_dmi_decoded(): read: abstractcs=0x2000002 {datacount=2 progbufsize=2}
+Debug: 1176 2870 riscv-013.c:623 abstract_cmd_batch_check_and_clear_cmderr(): [riscv.cpu] abstractcs=0x2000002 {datacount=2 relaxedpriv=full_checks busy=ready progbufsize=2 cmderr=none}
+Debug: 1177 2870 batch.c:291 riscv_batch_run_from(): [riscv.cpu] Running batch of scans [0, 2)
+Debug: 1178 2870 batch.c:255 log_batch(): 40b r 00000000 @04 -> + 00000000 @00; 1i
+Debug: 1179 2870 batch.c:255 log_batch(): 40b - 00000000 @00 -> + 00000000 @04; 1i
+Debug: 1180 2870 batch.c:199 log_dmi_decoded(): read: 
+Debug: 1181 2870 riscv-013.c:1586 register_read_direct(): [riscv.cpu] a7 = 0x0
+Debug: 1182 2870 riscv_reg.c:999 riscv_reg_get(): [riscv.cpu] Read a7: 0x0
+Debug: 1183 2870 riscv-013_reg.c:40 riscv013_reg_get(): [riscv.cpu] Read 0x00000000 from a7 (valid=1).
+Debug: 1184 2870 riscv_reg.c:990 riscv_reg_get(): [riscv.cpu] Reading s2 from target
+Debug: 1185 2870 riscv-013.c:5083 riscv013_get_register(): [riscv.cpu] reading register s2
+Debug: 1186 2870 riscv-013.c:1567 register_read_direct(): [riscv.cpu] Reading s2
+Debug: 1187 2870 riscv-013.c:664 riscv013_execute_abstract_command(): [riscv.cpu] access register=0x221012 {regno=0x1012 write=arg0 transfer=enabled postexec=disabled aarpostincrement=disabled aarsize=32bit}
+Debug: 1188 2870 batch.c:291 riscv_batch_run_from(): [riscv.cpu] Running batch of scans [0, 3)
+Debug: 1189 2870 batch.c:255 log_batch(): 40b w 00221012 @17 -> + 00000000 @00; 1i
+Debug: 1190 2870 batch.c:199 log_dmi_decoded(): write: command=0x221012 {control=0x221012}
+Debug: 1191 2870 batch.c:255 log_batch(): 40b r 00000000 @16 -> + 00221012 @17; 1i
+Debug: 1192 2870 batch.c:255 log_batch(): 40b - 00000000 @00 -> + 02000002 @16; 1i
+Debug: 1193 2870 batch.c:199 log_dmi_decoded(): read: abstractcs=0x2000002 {datacount=2 progbufsize=2}
+Debug: 1194 2870 riscv-013.c:623 abstract_cmd_batch_check_and_clear_cmderr(): [riscv.cpu] abstractcs=0x2000002 {datacount=2 relaxedpriv=full_checks busy=ready progbufsize=2 cmderr=none}
+Debug: 1195 2870 batch.c:291 riscv_batch_run_from(): [riscv.cpu] Running batch of scans [0, 2)
+Debug: 1196 2870 batch.c:255 log_batch(): 40b r 00000000 @04 -> + 00000000 @00; 1i
+Debug: 1197 2870 batch.c:255 log_batch(): 40b - 00000000 @00 -> + 00000000 @04; 1i
+Debug: 1198 2870 batch.c:199 log_dmi_decoded(): read: 
+Debug: 1199 2870 riscv-013.c:1586 register_read_direct(): [riscv.cpu] s2 = 0x0
+Debug: 1200 2870 riscv_reg.c:999 riscv_reg_get(): [riscv.cpu] Read s2: 0x0
+Debug: 1201 2870 riscv-013_reg.c:40 riscv013_reg_get(): [riscv.cpu] Read 0x00000000 from s2 (valid=1).
+Debug: 1202 2870 riscv_reg.c:990 riscv_reg_get(): [riscv.cpu] Reading s3 from target
+Debug: 1203 2870 riscv-013.c:5083 riscv013_get_register(): [riscv.cpu] reading register s3
+Debug: 1204 2870 riscv-013.c:1567 register_read_direct(): [riscv.cpu] Reading s3
+Debug: 1205 2870 riscv-013.c:664 riscv013_execute_abstract_command(): [riscv.cpu] access register=0x221013 {regno=0x1013 write=arg0 transfer=enabled postexec=disabled aarpostincrement=disabled aarsize=32bit}
+Debug: 1206 2870 batch.c:291 riscv_batch_run_from(): [riscv.cpu] Running batch of scans [0, 3)
+Debug: 1207 2870 batch.c:255 log_batch(): 40b w 00221013 @17 -> + 00000000 @00; 1i
+Debug: 1208 2870 batch.c:199 log_dmi_decoded(): write: command=0x221013 {control=0x221013}
+Debug: 1209 2870 batch.c:255 log_batch(): 40b r 00000000 @16 -> + 00221013 @17; 1i
+Debug: 1210 2870 batch.c:255 log_batch(): 40b - 00000000 @00 -> + 02000002 @16; 1i
+Debug: 1211 2870 batch.c:199 log_dmi_decoded(): read: abstractcs=0x2000002 {datacount=2 progbufsize=2}
+Debug: 1212 2870 riscv-013.c:623 abstract_cmd_batch_check_and_clear_cmderr(): [riscv.cpu] abstractcs=0x2000002 {datacount=2 relaxedpriv=full_checks busy=ready progbufsize=2 cmderr=none}
+Debug: 1213 2870 batch.c:291 riscv_batch_run_from(): [riscv.cpu] Running batch of scans [0, 2)
+Debug: 1214 2871 batch.c:255 log_batch(): 40b r 00000000 @04 -> + 00000000 @00; 1i
+Debug: 1215 2871 batch.c:255 log_batch(): 40b - 00000000 @00 -> + 00000000 @04; 1i
+Debug: 1216 2871 batch.c:199 log_dmi_decoded(): read: 
+Debug: 1217 2871 riscv-013.c:1586 register_read_direct(): [riscv.cpu] s3 = 0x0
+Debug: 1218 2871 riscv_reg.c:999 riscv_reg_get(): [riscv.cpu] Read s3: 0x0
+Debug: 1219 2871 riscv-013_reg.c:40 riscv013_reg_get(): [riscv.cpu] Read 0x00000000 from s3 (valid=1).
+Debug: 1220 2871 riscv_reg.c:990 riscv_reg_get(): [riscv.cpu] Reading s4 from target
+Debug: 1221 2871 riscv-013.c:5083 riscv013_get_register(): [riscv.cpu] reading register s4
+Debug: 1222 2871 riscv-013.c:1567 register_read_direct(): [riscv.cpu] Reading s4
+Debug: 1223 2871 riscv-013.c:664 riscv013_execute_abstract_command(): [riscv.cpu] access register=0x221014 {regno=0x1014 write=arg0 transfer=enabled postexec=disabled aarpostincrement=disabled aarsize=32bit}
+Debug: 1224 2871 batch.c:291 riscv_batch_run_from(): [riscv.cpu] Running batch of scans [0, 3)
+Debug: 1225 2871 batch.c:255 log_batch(): 40b w 00221014 @17 -> + 00000000 @00; 1i
+Debug: 1226 2871 batch.c:199 log_dmi_decoded(): write: command=0x221014 {control=0x221014}
+Debug: 1227 2871 batch.c:255 log_batch(): 40b r 00000000 @16 -> + 00221014 @17; 1i
+Debug: 1228 2871 batch.c:255 log_batch(): 40b - 00000000 @00 -> + 02000002 @16; 1i
+Debug: 1229 2871 batch.c:199 log_dmi_decoded(): read: abstractcs=0x2000002 {datacount=2 progbufsize=2}
+Debug: 1230 2871 riscv-013.c:623 abstract_cmd_batch_check_and_clear_cmderr(): [riscv.cpu] abstractcs=0x2000002 {datacount=2 relaxedpriv=full_checks busy=ready progbufsize=2 cmderr=none}
+Debug: 1231 2871 batch.c:291 riscv_batch_run_from(): [riscv.cpu] Running batch of scans [0, 2)
+Debug: 1232 2871 batch.c:255 log_batch(): 40b r 00000000 @04 -> + 00000000 @00; 1i
+Debug: 1233 2871 batch.c:255 log_batch(): 40b - 00000000 @00 -> + 00000000 @04; 1i
+Debug: 1234 2871 batch.c:199 log_dmi_decoded(): read: 
+Debug: 1235 2871 riscv-013.c:1586 register_read_direct(): [riscv.cpu] s4 = 0x0
+Debug: 1236 2871 riscv_reg.c:999 riscv_reg_get(): [riscv.cpu] Read s4: 0x0
+Debug: 1237 2871 riscv-013_reg.c:40 riscv013_reg_get(): [riscv.cpu] Read 0x00000000 from s4 (valid=1).
+Debug: 1238 2871 riscv_reg.c:990 riscv_reg_get(): [riscv.cpu] Reading s5 from target
+Debug: 1239 2871 riscv-013.c:5083 riscv013_get_register(): [riscv.cpu] reading register s5
+Debug: 1240 2871 riscv-013.c:1567 register_read_direct(): [riscv.cpu] Reading s5
+Debug: 1241 2871 riscv-013.c:664 riscv013_execute_abstract_command(): [riscv.cpu] access register=0x221015 {regno=0x1015 write=arg0 transfer=enabled postexec=disabled aarpostincrement=disabled aarsize=32bit}
+Debug: 1242 2871 batch.c:291 riscv_batch_run_from(): [riscv.cpu] Running batch of scans [0, 3)
+Debug: 1243 2871 batch.c:255 log_batch(): 40b w 00221015 @17 -> + 00000000 @00; 1i
+Debug: 1244 2871 batch.c:199 log_dmi_decoded(): write: command=0x221015 {control=0x221015}
+Debug: 1245 2871 batch.c:255 log_batch(): 40b r 00000000 @16 -> + 00221015 @17; 1i
+Debug: 1246 2871 batch.c:255 log_batch(): 40b - 00000000 @00 -> + 02000002 @16; 1i
+Debug: 1247 2871 batch.c:199 log_dmi_decoded(): read: abstractcs=0x2000002 {datacount=2 progbufsize=2}
+Debug: 1248 2871 riscv-013.c:623 abstract_cmd_batch_check_and_clear_cmderr(): [riscv.cpu] abstractcs=0x2000002 {datacount=2 relaxedpriv=full_checks busy=ready progbufsize=2 cmderr=none}
+Debug: 1249 2871 batch.c:291 riscv_batch_run_from(): [riscv.cpu] Running batch of scans [0, 2)
+Debug: 1250 2871 batch.c:255 log_batch(): 40b r 00000000 @04 -> + 00000000 @00; 1i
+Debug: 1251 2871 batch.c:255 log_batch(): 40b - 00000000 @00 -> + 00000000 @04; 1i
+Debug: 1252 2871 batch.c:199 log_dmi_decoded(): read: 
+Debug: 1253 2871 riscv-013.c:1586 register_read_direct(): [riscv.cpu] s5 = 0x0
+Debug: 1254 2871 riscv_reg.c:999 riscv_reg_get(): [riscv.cpu] Read s5: 0x0
+Debug: 1255 2871 riscv-013_reg.c:40 riscv013_reg_get(): [riscv.cpu] Read 0x00000000 from s5 (valid=1).
+Debug: 1256 2871 riscv_reg.c:990 riscv_reg_get(): [riscv.cpu] Reading s6 from target
+Debug: 1257 2871 riscv-013.c:5083 riscv013_get_register(): [riscv.cpu] reading register s6
+Debug: 1258 2871 riscv-013.c:1567 register_read_direct(): [riscv.cpu] Reading s6
+Debug: 1259 2871 riscv-013.c:664 riscv013_execute_abstract_command(): [riscv.cpu] access register=0x221016 {regno=0x1016 write=arg0 transfer=enabled postexec=disabled aarpostincrement=disabled aarsize=32bit}
+Debug: 1260 2871 batch.c:291 riscv_batch_run_from(): [riscv.cpu] Running batch of scans [0, 3)
+Debug: 1261 2871 batch.c:255 log_batch(): 40b w 00221016 @17 -> + 00000000 @00; 1i
+Debug: 1262 2871 batch.c:199 log_dmi_decoded(): write: command=0x221016 {control=0x221016}
+Debug: 1263 2871 batch.c:255 log_batch(): 40b r 00000000 @16 -> + 00221016 @17; 1i
+Debug: 1264 2871 batch.c:255 log_batch(): 40b - 00000000 @00 -> + 02000002 @16; 1i
+Debug: 1265 2871 batch.c:199 log_dmi_decoded(): read: abstractcs=0x2000002 {datacount=2 progbufsize=2}
+Debug: 1266 2871 riscv-013.c:623 abstract_cmd_batch_check_and_clear_cmderr(): [riscv.cpu] abstractcs=0x2000002 {datacount=2 relaxedpriv=full_checks busy=ready progbufsize=2 cmderr=none}
+Debug: 1267 2871 batch.c:291 riscv_batch_run_from(): [riscv.cpu] Running batch of scans [0, 2)
+Debug: 1268 2872 batch.c:255 log_batch(): 40b r 00000000 @04 -> + 00000000 @00; 1i
+Debug: 1269 2872 batch.c:255 log_batch(): 40b - 00000000 @00 -> + 00000000 @04; 1i
+Debug: 1270 2872 batch.c:199 log_dmi_decoded(): read: 
+Debug: 1271 2872 riscv-013.c:1586 register_read_direct(): [riscv.cpu] s6 = 0x0
+Debug: 1272 2872 riscv_reg.c:999 riscv_reg_get(): [riscv.cpu] Read s6: 0x0
+Debug: 1273 2872 riscv-013_reg.c:40 riscv013_reg_get(): [riscv.cpu] Read 0x00000000 from s6 (valid=1).
+Debug: 1274 2872 riscv_reg.c:990 riscv_reg_get(): [riscv.cpu] Reading s7 from target
+Debug: 1275 2872 riscv-013.c:5083 riscv013_get_register(): [riscv.cpu] reading register s7
+Debug: 1276 2872 riscv-013.c:1567 register_read_direct(): [riscv.cpu] Reading s7
+Debug: 1277 2872 riscv-013.c:664 riscv013_execute_abstract_command(): [riscv.cpu] access register=0x221017 {regno=0x1017 write=arg0 transfer=enabled postexec=disabled aarpostincrement=disabled aarsize=32bit}
+Debug: 1278 2872 batch.c:291 riscv_batch_run_from(): [riscv.cpu] Running batch of scans [0, 3)
+Debug: 1279 2872 batch.c:255 log_batch(): 40b w 00221017 @17 -> + 00000000 @00; 1i
+Debug: 1280 2872 batch.c:199 log_dmi_decoded(): write: command=0x221017 {control=0x221017}
+Debug: 1281 2872 batch.c:255 log_batch(): 40b r 00000000 @16 -> + 00221017 @17; 1i
+Debug: 1282 2872 batch.c:255 log_batch(): 40b - 00000000 @00 -> + 02000002 @16; 1i
+Debug: 1283 2872 batch.c:199 log_dmi_decoded(): read: abstractcs=0x2000002 {datacount=2 progbufsize=2}
+Debug: 1284 2872 riscv-013.c:623 abstract_cmd_batch_check_and_clear_cmderr(): [riscv.cpu] abstractcs=0x2000002 {datacount=2 relaxedpriv=full_checks busy=ready progbufsize=2 cmderr=none}
+Debug: 1285 2872 batch.c:291 riscv_batch_run_from(): [riscv.cpu] Running batch of scans [0, 2)
+Debug: 1286 2872 batch.c:255 log_batch(): 40b r 00000000 @04 -> + 00000000 @00; 1i
+Debug: 1287 2872 batch.c:255 log_batch(): 40b - 00000000 @00 -> + 00000000 @04; 1i
+Debug: 1288 2872 batch.c:199 log_dmi_decoded(): read: 
+Debug: 1289 2872 riscv-013.c:1586 register_read_direct(): [riscv.cpu] s7 = 0x0
+Debug: 1290 2872 riscv_reg.c:999 riscv_reg_get(): [riscv.cpu] Read s7: 0x0
+Debug: 1291 2872 riscv-013_reg.c:40 riscv013_reg_get(): [riscv.cpu] Read 0x00000000 from s7 (valid=1).
+Debug: 1292 2872 riscv_reg.c:990 riscv_reg_get(): [riscv.cpu] Reading s8 from target
+Debug: 1293 2872 riscv-013.c:5083 riscv013_get_register(): [riscv.cpu] reading register s8
+Debug: 1294 2872 riscv-013.c:1567 register_read_direct(): [riscv.cpu] Reading s8
+Debug: 1295 2872 riscv-013.c:664 riscv013_execute_abstract_command(): [riscv.cpu] access register=0x221018 {regno=0x1018 write=arg0 transfer=enabled postexec=disabled aarpostincrement=disabled aarsize=32bit}
+Debug: 1296 2872 batch.c:291 riscv_batch_run_from(): [riscv.cpu] Running batch of scans [0, 3)
+Debug: 1297 2872 batch.c:255 log_batch(): 40b w 00221018 @17 -> + 00000000 @00; 1i
+Debug: 1298 2872 batch.c:199 log_dmi_decoded(): write: command=0x221018 {control=0x221018}
+Debug: 1299 2872 batch.c:255 log_batch(): 40b r 00000000 @16 -> + 00221018 @17; 1i
+Debug: 1300 2872 batch.c:255 log_batch(): 40b - 00000000 @00 -> + 02000002 @16; 1i
+Debug: 1301 2872 batch.c:199 log_dmi_decoded(): read: abstractcs=0x2000002 {datacount=2 progbufsize=2}
+Debug: 1302 2872 riscv-013.c:623 abstract_cmd_batch_check_and_clear_cmderr(): [riscv.cpu] abstractcs=0x2000002 {datacount=2 relaxedpriv=full_checks busy=ready progbufsize=2 cmderr=none}
+Debug: 1303 2872 batch.c:291 riscv_batch_run_from(): [riscv.cpu] Running batch of scans [0, 2)
+Debug: 1304 2872 batch.c:255 log_batch(): 40b r 00000000 @04 -> + 00000000 @00; 1i
+Debug: 1305 2872 batch.c:255 log_batch(): 40b - 00000000 @00 -> + 00000000 @04; 1i
+Debug: 1306 2872 batch.c:199 log_dmi_decoded(): read: 
+Debug: 1307 2872 riscv-013.c:1586 register_read_direct(): [riscv.cpu] s8 = 0x0
+Debug: 1308 2872 riscv_reg.c:999 riscv_reg_get(): [riscv.cpu] Read s8: 0x0
+Debug: 1309 2872 riscv-013_reg.c:40 riscv013_reg_get(): [riscv.cpu] Read 0x00000000 from s8 (valid=1).
+Debug: 1310 2872 riscv_reg.c:990 riscv_reg_get(): [riscv.cpu] Reading s9 from target
+Debug: 1311 2872 riscv-013.c:5083 riscv013_get_register(): [riscv.cpu] reading register s9
+Debug: 1312 2872 riscv-013.c:1567 register_read_direct(): [riscv.cpu] Reading s9
+Debug: 1313 2872 riscv-013.c:664 riscv013_execute_abstract_command(): [riscv.cpu] access register=0x221019 {regno=0x1019 write=arg0 transfer=enabled postexec=disabled aarpostincrement=disabled aarsize=32bit}
+Debug: 1314 2872 batch.c:291 riscv_batch_run_from(): [riscv.cpu] Running batch of scans [0, 3)
+Debug: 1315 2873 batch.c:255 log_batch(): 40b w 00221019 @17 -> + 00000000 @00; 1i
+Debug: 1316 2873 batch.c:199 log_dmi_decoded(): write: command=0x221019 {control=0x221019}
+Debug: 1317 2873 batch.c:255 log_batch(): 40b r 00000000 @16 -> + 00221019 @17; 1i
+Debug: 1318 2873 batch.c:255 log_batch(): 40b - 00000000 @00 -> + 02000002 @16; 1i
+Debug: 1319 2873 batch.c:199 log_dmi_decoded(): read: abstractcs=0x2000002 {datacount=2 progbufsize=2}
+Debug: 1320 2873 riscv-013.c:623 abstract_cmd_batch_check_and_clear_cmderr(): [riscv.cpu] abstractcs=0x2000002 {datacount=2 relaxedpriv=full_checks busy=ready progbufsize=2 cmderr=none}
+Debug: 1321 2873 batch.c:291 riscv_batch_run_from(): [riscv.cpu] Running batch of scans [0, 2)
+Debug: 1322 2873 batch.c:255 log_batch(): 40b r 00000000 @04 -> + 00000000 @00; 1i
+Debug: 1323 2873 batch.c:255 log_batch(): 40b - 00000000 @00 -> + 00000000 @04; 1i
+Debug: 1324 2873 batch.c:199 log_dmi_decoded(): read: 
+Debug: 1325 2873 riscv-013.c:1586 register_read_direct(): [riscv.cpu] s9 = 0x0
+Debug: 1326 2873 riscv_reg.c:999 riscv_reg_get(): [riscv.cpu] Read s9: 0x0
+Debug: 1327 2873 riscv-013_reg.c:40 riscv013_reg_get(): [riscv.cpu] Read 0x00000000 from s9 (valid=1).
+Debug: 1328 2873 riscv_reg.c:990 riscv_reg_get(): [riscv.cpu] Reading s10 from target
+Debug: 1329 2873 riscv-013.c:5083 riscv013_get_register(): [riscv.cpu] reading register s10
+Debug: 1330 2873 riscv-013.c:1567 register_read_direct(): [riscv.cpu] Reading s10
+Debug: 1331 2873 riscv-013.c:664 riscv013_execute_abstract_command(): [riscv.cpu] access register=0x22101a {regno=0x101a write=arg0 transfer=enabled postexec=disabled aarpostincrement=disabled aarsize=32bit}
+Debug: 1332 2873 batch.c:291 riscv_batch_run_from(): [riscv.cpu] Running batch of scans [0, 3)
+Debug: 1333 2873 batch.c:255 log_batch(): 40b w 0022101a @17 -> + 00000000 @00; 1i
+Debug: 1334 2873 batch.c:199 log_dmi_decoded(): write: command=0x22101a {control=0x22101a}
+Debug: 1335 2873 batch.c:255 log_batch(): 40b r 00000000 @16 -> + 0022101a @17; 1i
+Debug: 1336 2873 batch.c:255 log_batch(): 40b - 00000000 @00 -> + 02000002 @16; 1i
+Debug: 1337 2873 batch.c:199 log_dmi_decoded(): read: abstractcs=0x2000002 {datacount=2 progbufsize=2}
+Debug: 1338 2873 riscv-013.c:623 abstract_cmd_batch_check_and_clear_cmderr(): [riscv.cpu] abstractcs=0x2000002 {datacount=2 relaxedpriv=full_checks busy=ready progbufsize=2 cmderr=none}
+Debug: 1339 2873 batch.c:291 riscv_batch_run_from(): [riscv.cpu] Running batch of scans [0, 2)
+Debug: 1340 2873 batch.c:255 log_batch(): 40b r 00000000 @04 -> + 00000000 @00; 1i
+Debug: 1341 2873 batch.c:255 log_batch(): 40b - 00000000 @00 -> + 00000000 @04; 1i
+Debug: 1342 2873 batch.c:199 log_dmi_decoded(): read: 
+Debug: 1343 2873 riscv-013.c:1586 register_read_direct(): [riscv.cpu] s10 = 0x0
+Debug: 1344 2873 riscv_reg.c:999 riscv_reg_get(): [riscv.cpu] Read s10: 0x0
+Debug: 1345 2873 riscv-013_reg.c:40 riscv013_reg_get(): [riscv.cpu] Read 0x00000000 from s10 (valid=1).
+Debug: 1346 2873 riscv_reg.c:990 riscv_reg_get(): [riscv.cpu] Reading s11 from target
+Debug: 1347 2873 riscv-013.c:5083 riscv013_get_register(): [riscv.cpu] reading register s11
+Debug: 1348 2873 riscv-013.c:1567 register_read_direct(): [riscv.cpu] Reading s11
+Debug: 1349 2873 riscv-013.c:664 riscv013_execute_abstract_command(): [riscv.cpu] access register=0x22101b {regno=0x101b write=arg0 transfer=enabled postexec=disabled aarpostincrement=disabled aarsize=32bit}
+Debug: 1350 2873 batch.c:291 riscv_batch_run_from(): [riscv.cpu] Running batch of scans [0, 3)
+Debug: 1351 2873 batch.c:255 log_batch(): 40b w 0022101b @17 -> + 00000000 @00; 1i
+Debug: 1352 2873 batch.c:199 log_dmi_decoded(): write: command=0x22101b {control=0x22101b}
+Debug: 1353 2873 batch.c:255 log_batch(): 40b r 00000000 @16 -> + 0022101b @17; 1i
+Debug: 1354 2873 batch.c:255 log_batch(): 40b - 00000000 @00 -> + 02000002 @16; 1i
+Debug: 1355 2873 batch.c:199 log_dmi_decoded(): read: abstractcs=0x2000002 {datacount=2 progbufsize=2}
+Debug: 1356 2873 riscv-013.c:623 abstract_cmd_batch_check_and_clear_cmderr(): [riscv.cpu] abstractcs=0x2000002 {datacount=2 relaxedpriv=full_checks busy=ready progbufsize=2 cmderr=none}
+Debug: 1357 2873 batch.c:291 riscv_batch_run_from(): [riscv.cpu] Running batch of scans [0, 2)
+Debug: 1358 2873 batch.c:255 log_batch(): 40b r 00000000 @04 -> + 00000000 @00; 1i
+Debug: 1359 2873 batch.c:255 log_batch(): 40b - 00000000 @00 -> + 00000000 @04; 1i
+Debug: 1360 2873 batch.c:199 log_dmi_decoded(): read: 
+Debug: 1361 2873 riscv-013.c:1586 register_read_direct(): [riscv.cpu] s11 = 0x0
+Debug: 1362 2873 riscv_reg.c:999 riscv_reg_get(): [riscv.cpu] Read s11: 0x0
+Debug: 1363 2873 riscv-013_reg.c:40 riscv013_reg_get(): [riscv.cpu] Read 0x00000000 from s11 (valid=1).
+Debug: 1364 2873 riscv_reg.c:990 riscv_reg_get(): [riscv.cpu] Reading t3 from target
+Debug: 1365 2873 riscv-013.c:5083 riscv013_get_register(): [riscv.cpu] reading register t3
+Debug: 1366 2873 riscv-013.c:1567 register_read_direct(): [riscv.cpu] Reading t3
+Debug: 1367 2873 riscv-013.c:664 riscv013_execute_abstract_command(): [riscv.cpu] access register=0x22101c {regno=0x101c write=arg0 transfer=enabled postexec=disabled aarpostincrement=disabled aarsize=32bit}
+Debug: 1368 2873 batch.c:291 riscv_batch_run_from(): [riscv.cpu] Running batch of scans [0, 3)
+Debug: 1369 2874 batch.c:255 log_batch(): 40b w 0022101c @17 -> + 00000000 @00; 1i
+Debug: 1370 2874 batch.c:199 log_dmi_decoded(): write: command=0x22101c {control=0x22101c}
+Debug: 1371 2874 batch.c:255 log_batch(): 40b r 00000000 @16 -> + 0022101c @17; 1i
+Debug: 1372 2874 batch.c:255 log_batch(): 40b - 00000000 @00 -> + 02000002 @16; 1i
+Debug: 1373 2874 batch.c:199 log_dmi_decoded(): read: abstractcs=0x2000002 {datacount=2 progbufsize=2}
+Debug: 1374 2874 riscv-013.c:623 abstract_cmd_batch_check_and_clear_cmderr(): [riscv.cpu] abstractcs=0x2000002 {datacount=2 relaxedpriv=full_checks busy=ready progbufsize=2 cmderr=none}
+Debug: 1375 2874 batch.c:291 riscv_batch_run_from(): [riscv.cpu] Running batch of scans [0, 2)
+Debug: 1376 2874 batch.c:255 log_batch(): 40b r 00000000 @04 -> + 00000000 @00; 1i
+Debug: 1377 2874 batch.c:255 log_batch(): 40b - 00000000 @00 -> + 00000000 @04; 1i
+Debug: 1378 2874 batch.c:199 log_dmi_decoded(): read: 
+Debug: 1379 2874 riscv-013.c:1586 register_read_direct(): [riscv.cpu] t3 = 0x0
+Debug: 1380 2874 riscv_reg.c:999 riscv_reg_get(): [riscv.cpu] Read t3: 0x0
+Debug: 1381 2874 riscv-013_reg.c:40 riscv013_reg_get(): [riscv.cpu] Read 0x00000000 from t3 (valid=1).
+Debug: 1382 2874 riscv_reg.c:990 riscv_reg_get(): [riscv.cpu] Reading t4 from target
+Debug: 1383 2874 riscv-013.c:5083 riscv013_get_register(): [riscv.cpu] reading register t4
+Debug: 1384 2874 riscv-013.c:1567 register_read_direct(): [riscv.cpu] Reading t4
+Debug: 1385 2874 riscv-013.c:664 riscv013_execute_abstract_command(): [riscv.cpu] access register=0x22101d {regno=0x101d write=arg0 transfer=enabled postexec=disabled aarpostincrement=disabled aarsize=32bit}
+Debug: 1386 2874 batch.c:291 riscv_batch_run_from(): [riscv.cpu] Running batch of scans [0, 3)
+Debug: 1387 2874 batch.c:255 log_batch(): 40b w 0022101d @17 -> + 00000000 @00; 1i
+Debug: 1388 2874 batch.c:199 log_dmi_decoded(): write: command=0x22101d {control=0x22101d}
+Debug: 1389 2874 batch.c:255 log_batch(): 40b r 00000000 @16 -> + 0022101d @17; 1i
+Debug: 1390 2874 batch.c:255 log_batch(): 40b - 00000000 @00 -> + 02000002 @16; 1i
+Debug: 1391 2874 batch.c:199 log_dmi_decoded(): read: abstractcs=0x2000002 {datacount=2 progbufsize=2}
+Debug: 1392 2874 riscv-013.c:623 abstract_cmd_batch_check_and_clear_cmderr(): [riscv.cpu] abstractcs=0x2000002 {datacount=2 relaxedpriv=full_checks busy=ready progbufsize=2 cmderr=none}
+Debug: 1393 2874 batch.c:291 riscv_batch_run_from(): [riscv.cpu] Running batch of scans [0, 2)
+Debug: 1394 2874 batch.c:255 log_batch(): 40b r 00000000 @04 -> + 00000000 @00; 1i
+Debug: 1395 2874 batch.c:255 log_batch(): 40b - 00000000 @00 -> + 00000000 @04; 1i
+Debug: 1396 2874 batch.c:199 log_dmi_decoded(): read: 
+Debug: 1397 2874 riscv-013.c:1586 register_read_direct(): [riscv.cpu] t4 = 0x0
+Debug: 1398 2874 riscv_reg.c:999 riscv_reg_get(): [riscv.cpu] Read t4: 0x0
+Debug: 1399 2874 riscv-013_reg.c:40 riscv013_reg_get(): [riscv.cpu] Read 0x00000000 from t4 (valid=1).
+Debug: 1400 2874 riscv_reg.c:990 riscv_reg_get(): [riscv.cpu] Reading t5 from target
+Debug: 1401 2874 riscv-013.c:5083 riscv013_get_register(): [riscv.cpu] reading register t5
+Debug: 1402 2874 riscv-013.c:1567 register_read_direct(): [riscv.cpu] Reading t5
+Debug: 1403 2874 riscv-013.c:664 riscv013_execute_abstract_command(): [riscv.cpu] access register=0x22101e {regno=0x101e write=arg0 transfer=enabled postexec=disabled aarpostincrement=disabled aarsize=32bit}
+Debug: 1404 2874 batch.c:291 riscv_batch_run_from(): [riscv.cpu] Running batch of scans [0, 3)
+Debug: 1405 2874 batch.c:255 log_batch(): 40b w 0022101e @17 -> + 00000000 @00; 1i
+Debug: 1406 2874 batch.c:199 log_dmi_decoded(): write: command=0x22101e {control=0x22101e}
+Debug: 1407 2874 batch.c:255 log_batch(): 40b r 00000000 @16 -> + 0022101e @17; 1i
+Debug: 1408 2874 batch.c:255 log_batch(): 40b - 00000000 @00 -> + 02000002 @16; 1i
+Debug: 1409 2874 batch.c:199 log_dmi_decoded(): read: abstractcs=0x2000002 {datacount=2 progbufsize=2}
+Debug: 1410 2874 riscv-013.c:623 abstract_cmd_batch_check_and_clear_cmderr(): [riscv.cpu] abstractcs=0x2000002 {datacount=2 relaxedpriv=full_checks busy=ready progbufsize=2 cmderr=none}
+Debug: 1411 2874 batch.c:291 riscv_batch_run_from(): [riscv.cpu] Running batch of scans [0, 2)
+Debug: 1412 2874 batch.c:255 log_batch(): 40b r 00000000 @04 -> + 00000000 @00; 1i
+Debug: 1413 2874 batch.c:255 log_batch(): 40b - 00000000 @00 -> + 00000000 @04; 1i
+Debug: 1414 2874 batch.c:199 log_dmi_decoded(): read: 
+Debug: 1415 2874 riscv-013.c:1586 register_read_direct(): [riscv.cpu] t5 = 0x0
+Debug: 1416 2874 riscv_reg.c:999 riscv_reg_get(): [riscv.cpu] Read t5: 0x0
+Debug: 1417 2874 riscv-013_reg.c:40 riscv013_reg_get(): [riscv.cpu] Read 0x00000000 from t5 (valid=1).
+Debug: 1418 2874 riscv_reg.c:990 riscv_reg_get(): [riscv.cpu] Reading t6 from target
+Debug: 1419 2874 riscv-013.c:5083 riscv013_get_register(): [riscv.cpu] reading register t6
+Debug: 1420 2874 riscv-013.c:1567 register_read_direct(): [riscv.cpu] Reading t6
+Debug: 1421 2874 riscv-013.c:664 riscv013_execute_abstract_command(): [riscv.cpu] access register=0x22101f {regno=0x101f write=arg0 transfer=enabled postexec=disabled aarpostincrement=disabled aarsize=32bit}
+Debug: 1422 2874 batch.c:291 riscv_batch_run_from(): [riscv.cpu] Running batch of scans [0, 3)
+Debug: 1423 2875 batch.c:255 log_batch(): 40b w 0022101f @17 -> + 00000000 @00; 1i
+Debug: 1424 2875 batch.c:199 log_dmi_decoded(): write: command=0x22101f {control=0x22101f}
+Debug: 1425 2875 batch.c:255 log_batch(): 40b r 00000000 @16 -> + 0022101f @17; 1i
+Debug: 1426 2875 batch.c:255 log_batch(): 40b - 00000000 @00 -> + 02000002 @16; 1i
+Debug: 1427 2875 batch.c:199 log_dmi_decoded(): read: abstractcs=0x2000002 {datacount=2 progbufsize=2}
+Debug: 1428 2875 riscv-013.c:623 abstract_cmd_batch_check_and_clear_cmderr(): [riscv.cpu] abstractcs=0x2000002 {datacount=2 relaxedpriv=full_checks busy=ready progbufsize=2 cmderr=none}
+Debug: 1429 2875 batch.c:291 riscv_batch_run_from(): [riscv.cpu] Running batch of scans [0, 2)
+Debug: 1430 2875 batch.c:255 log_batch(): 40b r 00000000 @04 -> + 00000000 @00; 1i
+Debug: 1431 2875 batch.c:255 log_batch(): 40b - 00000000 @00 -> + 00000000 @04; 1i
+Debug: 1432 2875 batch.c:199 log_dmi_decoded(): read: 
+Debug: 1433 2875 riscv-013.c:1586 register_read_direct(): [riscv.cpu] t6 = 0x0
+Debug: 1434 2875 riscv_reg.c:999 riscv_reg_get(): [riscv.cpu] Read t6: 0x0
+Debug: 1435 2875 riscv-013_reg.c:40 riscv013_reg_get(): [riscv.cpu] Read 0x00000000 from t6 (valid=1).
+Debug: 1436 2875 riscv_reg.c:990 riscv_reg_get(): [riscv.cpu] Reading dpc from target
+Debug: 1437 2875 riscv-013.c:5083 riscv013_get_register(): [riscv.cpu] reading register dpc
+Debug: 1438 2875 riscv-013.c:1567 register_read_direct(): [riscv.cpu] Reading dpc
+Debug: 1439 2875 riscv-013.c:664 riscv013_execute_abstract_command(): [riscv.cpu] access register=0x2207b1 {regno=0x7b1 write=arg0 transfer=enabled postexec=disabled aarpostincrement=disabled aarsize=32bit}
+Debug: 1440 2875 batch.c:291 riscv_batch_run_from(): [riscv.cpu] Running batch of scans [0, 3)
+Debug: 1441 2875 batch.c:255 log_batch(): 40b w 002207b1 @17 -> + 00000000 @00; 1i
+Debug: 1442 2875 batch.c:199 log_dmi_decoded(): write: command=0x2207b1 {control=0x2207b1}
+Debug: 1443 2875 batch.c:255 log_batch(): 40b r 00000000 @16 -> + 002207b1 @17; 1i
+Debug: 1444 2875 batch.c:255 log_batch(): 40b - 00000000 @00 -> + 02000002 @16; 1i
+Debug: 1445 2875 batch.c:199 log_dmi_decoded(): read: abstractcs=0x2000002 {datacount=2 progbufsize=2}
+Debug: 1446 2875 riscv-013.c:623 abstract_cmd_batch_check_and_clear_cmderr(): [riscv.cpu] abstractcs=0x2000002 {datacount=2 relaxedpriv=full_checks busy=ready progbufsize=2 cmderr=none}
+Debug: 1447 2875 batch.c:291 riscv_batch_run_from(): [riscv.cpu] Running batch of scans [0, 2)
+Debug: 1448 2875 batch.c:255 log_batch(): 40b r 00000000 @04 -> + 00000000 @00; 1i
+Debug: 1449 2875 batch.c:255 log_batch(): 40b - 00000000 @00 -> + 00000000 @04; 1i
+Debug: 1450 2875 batch.c:199 log_dmi_decoded(): read: 
+Debug: 1451 2875 riscv-013.c:1586 register_read_direct(): [riscv.cpu] dpc = 0x0
+Debug: 1452 2875 riscv_reg.c:999 riscv_reg_get(): [riscv.cpu] Read dpc: 0x0
+Debug: 1453 2875 riscv-013_reg.c:40 riscv013_reg_get(): [riscv.cpu] Read 0x00000000 from pc (valid=0).
+Debug: 1454 2875 riscv_reg.c:985 riscv_reg_get(): [riscv.cpu] Read dpc: 0x0 (cached)
+Debug: 1455 2875 riscv-013_reg.c:40 riscv013_reg_get(): [riscv.cpu] Read 0x00000000 from pc (valid=0).
+Debug: 1456 2875 gdb_server.c:441 gdb_log_outgoing_packet(): [riscv.cpu] {1} sending packet: $00000000f6001110480211107c0a1110000000007c0211107c0211100000100078021110000000000a00000014000000000000000000000003000000020000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000#0c

@@ -1,0 +1,5 @@
+(gdb) monitor halt
+[remote] Sending packet: $qRcmd,68616c74#fc
+[remote] Packet received: O72697363762e6370752068616c7465642064756520746f2064656275672d726571756573742e0a
+riscv.cpu halted due to debug-request.
+[remote] Packet received: OK
