@@ -455,6 +455,8 @@ Info : 457 22 riscv-013.c:2091 examine(): [riscv.cpu]  XLEN=32, misa=0x4034112d
 User : 458 22 target.c:688 target_examine_one(): [riscv.cpu] Target successfully examined.
 Debug: 459 22 target.c:1780 target_call_event_callbacks(): target event 21 (examine-end) for core riscv.cpu
 Info : 460 22 target.c:692 target_examine_one(): [riscv.cpu] Examination succeed
+
+
 Debug: 461 22 command.c:153 script_debug(): command - halt
 Debug: 462 22 target.c:3246 handle_halt_command(): -
 Debug: 463 22 riscv.c:2707 riscv_halt(): [riscv.cpu] halting all harts
@@ -481,6 +483,8 @@ Debug: 483 23 batch.c:255 log_batch(): 40b - 00000000 @00 -> + 00000001 @10; 1i
 Debug: 484 23 target.c:1780 target_call_event_callbacks(): target event 0 (gdb-halt) for core riscv.cpu
 Debug: 485 23 target.c:1780 target_call_event_callbacks(): target event 1 (halted) for core riscv.cpu
 User : 486 23 riscv.c:3574 riscv_arch_state(): riscv.cpu halted due to debug-request.
+
+
 Debug: 487 23 riscv.c:4029 riscv_openocd_poll(): [riscv.cpu] Polling all harts.
 Debug: 488 23 riscv.c:3852 riscv_poll_hart(): [riscv.cpu] polling, target->state=2
 Debug: 489 23 batch.c:291 riscv_batch_run_from(): [riscv.cpu] Running batch of scans [0, 2)
@@ -488,6 +492,8 @@ Debug: 490 23 batch.c:255 log_batch(): 40b r 00000000 @11 -> + 00000000 @00; 1i
 Debug: 491 23 batch.c:255 log_batch(): 40b - 00000000 @00 -> + 00430382 @11; 1i
 Debug: 492 23 batch.c:199 log_dmi_decoded(): read: dmstatus=0x430382 {version=0_13 anyresumeack=1 allresumeack=1 impebreak=1 authenticated=true anyhalted=1 allhalted=1}
 Debug: 493 23 riscv.c:4085 riscv_openocd_poll(): [riscv.cpu] should_remain_halted=0, should_resume=0
+
+
 Info : 494 23 server.c:298 add_service(): Listening on port 6666 for tcl connections
 Info : 495 23 server.c:298 add_service(): Listening on port 4444 for telnet connections
 Debug: 496 23 command.c:153 script_debug(): command - init

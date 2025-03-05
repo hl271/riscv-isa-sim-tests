@@ -1,0 +1,26 @@
+Debug: 461 22 command.c:153 script_debug(): command - halt
+Debug: 462 22 target.c:3246 handle_halt_command(): -
+Debug: 463 22 riscv.c:2707 riscv_halt(): [riscv.cpu] halting all harts
+Debug: 464 22 riscv.c:2628 halt_prep(): [riscv.cpu] prep hart, debug_reason=5
+Debug: 465 22 batch.c:291 riscv_batch_run_from(): [riscv.cpu] Running batch of scans [0, 2)
+Debug: 466 22 batch.c:255 log_batch(): 40b r 00000000 @11 -> + 00000000 @00; 1i
+Debug: 467 22 batch.c:255 log_batch(): 40b - 00000000 @00 -> + 00430c82 @11; 1i
+Debug: 468 22 batch.c:199 log_dmi_decoded(): read: dmstatus=0x430c82 {version=0_13 anyrunning=1 allrunning=1 anyresumeack=1 allresumeack=1 impebreak=1 authenticated=true}
+Debug: 469 22 riscv_reg.c:915 riscv_reg_cache_invalidate_all(): [riscv.cpu] Invalidating register cache.
+Debug: 470 22 riscv-013.c:5159 select_prepped_harts(): [riscv.cpu] index=0, prepped=1
+Debug: 471 22 riscv-013.c:5213 riscv013_halt_go(): [riscv.cpu] halting hart
+Debug: 472 22 batch.c:291 riscv_batch_run_from(): [riscv.cpu] Running batch of scans [0, 2)
+Debug: 473 23 batch.c:255 log_batch(): 40b w 80000001 @10 -> + 00000000 @00; 1i
+Debug: 474 23 batch.c:199 log_dmi_decoded(): write: dmcontrol=0x80000001 {dmactive=active haltreq=1}
+Debug: 475 23 batch.c:255 log_batch(): 40b - 00000000 @00 -> + 80000001 @10; 1i
+Debug: 476 23 batch.c:291 riscv_batch_run_from(): [riscv.cpu] Running batch of scans [0, 2)
+Debug: 477 23 batch.c:255 log_batch(): 40b r 00000000 @11 -> + 00000000 @00; 1i
+Debug: 478 23 batch.c:255 log_batch(): 40b - 00000000 @00 -> + 00430382 @11; 1i
+Debug: 479 23 batch.c:199 log_dmi_decoded(): read: dmstatus=0x430382 {version=0_13 anyresumeack=1 allresumeack=1 impebreak=1 authenticated=true anyhalted=1 allhalted=1}
+Debug: 480 23 batch.c:291 riscv_batch_run_from(): [riscv.cpu] Running batch of scans [0, 2)
+Debug: 481 23 batch.c:255 log_batch(): 40b w 00000001 @10 -> + 00000000 @00; 1i
+Debug: 482 23 batch.c:199 log_dmi_decoded(): write: dmcontrol=1 {dmactive=active}
+Debug: 483 23 batch.c:255 log_batch(): 40b - 00000000 @00 -> + 00000001 @10; 1i
+Debug: 484 23 target.c:1780 target_call_event_callbacks(): target event 0 (gdb-halt) for core riscv.cpu
+Debug: 485 23 target.c:1780 target_call_event_callbacks(): target event 1 (halted) for core riscv.cpu
+User : 486 23 riscv.c:3574 riscv_arch_state(): riscv.cpu halted due to debug-request.

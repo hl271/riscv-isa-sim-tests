@@ -1,0 +1,7 @@
+Debug: 487 23 riscv.c:4029 riscv_openocd_poll(): [riscv.cpu] Polling all harts.
+Debug: 488 23 riscv.c:3852 riscv_poll_hart(): [riscv.cpu] polling, target->state=2
+Debug: 489 23 batch.c:291 riscv_batch_run_from(): [riscv.cpu] Running batch of scans [0, 2)
+Debug: 490 23 batch.c:255 log_batch(): 40b r 00000000 @11 -> + 00000000 @00; 1i
+Debug: 491 23 batch.c:255 log_batch(): 40b - 00000000 @00 -> + 00430382 @11; 1i
+Debug: 492 23 batch.c:199 log_dmi_decoded(): read: dmstatus=0x430382 {version=0_13 anyresumeack=1 allresumeack=1 impebreak=1 authenticated=true anyhalted=1 allhalted=1}
+Debug: 493 23 riscv.c:4085 riscv_openocd_poll(): [riscv.cpu] should_remain_halted=0, should_resume=0
